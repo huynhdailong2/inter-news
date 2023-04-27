@@ -16,7 +16,7 @@
             $icon=$_POST['icon'];
             $description=$_POST['description'];
             $categoryPost=new CategoryPost();
-            $check=$categoryPost->insert($name,$slug,$icon,$description);
+            $check=$categoryPost->insert($name,$slug,$icon,$description,$datecreate);
             if($check!==false){
                 echo "<script>alert('Thêm thành công!')</script>";
                 include "../../View/back/CategoryPost.php";
@@ -24,6 +24,9 @@
                 echo "<script>alert('Thêm không thành công,Vui lòng nhập lại!')</script>";
                 include "../../View/back/AddCategoryPost.php";
             }
+            break;
+        case 'edit':
+            include "../../View/EditCagoryPost.php";
             break;
         case 'delete':
             if(isset($_GET['id'])){

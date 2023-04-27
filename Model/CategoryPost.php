@@ -17,12 +17,21 @@
         }
         public function insert($name,$slug,$icon,$description){
             $db=new Connect();
-            $date=new DateTime("now");
-            $datecreate=$date->format("Y-m-d");
+            $date=new DateTime('Asia/Ho_Chi_Minh');
+            $datecreate=$date->format('Y-m-d H:i:s');
+            // $datetime=date('Y-m-d now',time());
             $sql="insert into category_posts(id,name,slug,icon,description,created_at) 
-            values(NULL,'$name','$slug','$icon','$description','$datacreate')";
+            values(NULL,'$name','$slug','$icon','$description','$datecreate')";
             $result=$db->exec($sql);
             return $result;
+        }
+        public function update($id,$name,$slug,$icon,$description){
+            $db=new Connect();
+            $sql="update category_posts set 
+            name='$name',
+            slug='$slug',
+            icon='$icon',
+            description='$description' where id=$id";
         }
         public function delete($id){
             $db=new Connect();

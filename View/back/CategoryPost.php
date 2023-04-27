@@ -50,7 +50,7 @@
         <td><?php echo $set['slug'];?></td>
         <td><?php echo $set['icon'];?></td>
         <td><?php echo $set['description'];?></td>
-        <td><a href="index.php?action=information&act=editIn4&id=<?php echo $set['id'];?>">Update</a></td>
+        <td><a href="index.php?action=CategoryPostController&act=editIn4&id=<?php echo $set['id'];?>">Edit</a></td>
         <td><a href="index.php?action=CategoryPostController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
       </tr>
      <?php

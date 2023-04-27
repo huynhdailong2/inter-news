@@ -26,7 +26,7 @@
                     <!-- Links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=home">Trang Chủ</a>
+                            <a class="nav-link" href="index.php?action=HomeAdminController">Trang Chủ</a>
                         </li>
                         
                         <!-- Quản trị Doanh Mục -->
@@ -64,9 +64,6 @@
                         </li> -->
                         
                         <!-- Báo cáo Tồn kho -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Tồn Kho</a>
-                        </li>
                         <!--Đăng xuất-->
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?action=AdminController&act=logout">Đăng xuất</a>
