@@ -1,20 +1,15 @@
 <?php
-include "../Config/Connect.php";
-class Admin
-{
+class Admin{
     public function __construct()
     {
+
     }
     // phương thức loginadmin
-    public function logAdmin($user, $pass)
+    public function loginAdmin($email, $password)
     {
         $db = new Connect();
-        $select = "select * from admin where admin_user='$user' and admin_password='$pass'";
-        // echo $select;
-        $result = $db->getInstance($select);
+        $sql="select * from admins where email='$email' and password='$password'";
+        $result=$db->getInstance($sql);
         return $result;
-        // $result=$db->getList($select);
-        // $set=$result->fetch(); // $set[admin,123456]
-        // return $set;
     }
 }

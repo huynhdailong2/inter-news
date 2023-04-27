@@ -20,7 +20,7 @@
                 <!-- test -->
                 <nav class="navbar navbar-expand-sm bg-light navbar-light">
                     <!-- Brand -->
-                    <img style="margin-left:10px;" width="100" height="50" src="Content/images/logocopy.png" alt="">
+                    <img style="margin-left:10px;" width="100" height="50" src="../../Assets/back/images/logocopy.png" alt="">
                     <a class="navbar-brand" href="index.php?action=home">ADMIN</a>
 
                     <!-- Links -->
@@ -52,7 +52,7 @@
                             <a class="nav-link" href="index.php?action=license&act=giayphep">Quản Lý Giấy Phép</a>
                         </li>
                         <!-- Báo cáo -->
-                        <li class="nav-item dropdown">
+                        <!-- <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 Báo Cáo
                             </a>
@@ -61,7 +61,7 @@
                                 <a class="dropdown-item" href="index.php?action=thongkeYear">Năm</a>
                                 <a class="dropdown-item" href="index.php?action=thongkeQuy">Quý</a>
                             </div>
-                        </li>
+                        </li> -->
                         
                         <!-- Báo cáo Tồn kho -->
                         <li class="nav-item">
@@ -69,8 +69,16 @@
                         </li>
                         <!--Đăng xuất-->
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=dangnhap&act=dangxuat">Đăng xuất</a>
+                            <a class="nav-link" href="index.php?action=AdminController&act=logout">Đăng xuất</a>
                         </li>
+                        <?php
+                            if(isset($_SESSION['email'])&& isset($_SESSION['password'])):
+                                $name=$_SESSION['username'];
+                        ?>
+                        <li class="nav-item">
+                            <h5 style="color:red;" class="nav-link"><?php echo 'Xin chào'.' '.$name?></h5>
+                        </li>
+                        <?php endif;?>
                     </ul>
                 </nav>
                 <!-- end test -->

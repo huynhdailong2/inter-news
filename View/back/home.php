@@ -33,7 +33,7 @@
 <div class="marquee container-fluid">
   <div>
     <span>
-    <img width="100" height="50" src="Content/images/logocopy.png" alt=""> &nbsp; Welcome to Công ty TNHH BLUSZA &nbsp; <img width="100" height="50" src="Content/images/logocopy.png" alt="">
+    <img width="100" height="50" src="../../Assets/back/images/logocopy.png" alt=""> &nbsp; Welcome to Công ty TNHH BLUSZA &nbsp; <img width="100" height="50" src="../../Assets/back/images/logocopy.png" alt="">
     </span>
   </div>
 </div>
