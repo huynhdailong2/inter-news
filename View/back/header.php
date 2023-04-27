@@ -49,7 +49,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=license&act=giayphep">Quản Lý Giấy Phép</a>
+                            <a class="nav-link" href="index.php?action=CategoryPostController&act=CategoryPost">Category Post</a>
                         </li>
                         <!-- Báo cáo -->
                         <!-- <li class="nav-item dropdown">
