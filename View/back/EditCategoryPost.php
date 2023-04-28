@@ -1,24 +1,26 @@
+
 <style>
 div.title {
     margin-top: 30px;
 }   
 </style>
 
-<div class="col-md-12 col-12 col-md-offset-4 title">
+<div class="col-md-12 col-12  title">
     <h3><b>Edit CATEGORY POST</b></h3>
 </div>
 
-<div class="row col-md-12 col-md-offset-4">
+<div class="col-md-12">
     <?php
     if(isset($_GET['id'])){
       $id=$_GET['id'];
-      $CategoryPost=new CategoryPost();
-      $result=$CategoryPost->getCategoryPostId($id);
+      $CategoryPostModel=new CategoryPost();
+      $result=$CategoryPostModel->getCategoryPostId($id);
       $id=$result['id'];
       $name=$result['name'];
       $slug=$result['slug'];
       $icon=$result['icon'];
       $description=$result['description'];
+      
     }
   ?>
     <!--tạo thẻ form-->

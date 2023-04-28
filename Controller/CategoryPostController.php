@@ -39,7 +39,7 @@
                 $check=$categoryPost->update($id,$name,$slug,$icon,$description);
                 if($check!==false){
                     echo '<script>alert ("Cập nhật thành công !!")</script>';
-                    include "../../View/back/CategoryPost.php";
+                    header("location: ../../View/back/CategoryPost.php");
                 }else{
                     echo '<script>alert ("Cập nhật thành công !!")</script>';
                     include "../../View/back/EditCategoryPost.php";

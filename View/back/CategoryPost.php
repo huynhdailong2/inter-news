@@ -1,4 +1,6 @@
-
+<?php
+require "../../Model/CategoryPost.php";
+?>
 <style>
   div.title{
     margin-top: 20px;
@@ -16,6 +18,7 @@
   margin-right: 5px;
 }
 </style>
+
 <div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>CATEGORY POSTS</b></h3></div>
 <div class="row col-12 title-2">
 <a href="index.php?action=CategoryPostController&act=insert"><h4>ADD CATEGORY POST</h4></a>
@@ -35,6 +38,7 @@
         <th>Slug</th>
         <th>Icon</th>
         <th>Description</th>
+        <th>image</th>
         <th colspan="3">Actions</th>
       </tr>
     </thead>
@@ -50,6 +54,7 @@
         <td><?php echo $set['slug'];?></td>
         <td><?php echo $set['icon'];?></td>
         <td><?php echo $set['description'];?></td>
+        <th><i class="<?php echo $set['icon'];?>"></i></th>
         <td><a href="index.php?action=CategoryPostController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
         <td><a href="index.php?action=CategoryPostController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
       </tr>
@@ -59,3 +64,5 @@
     </tbody>
   </table>
 </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" integrity="sha512-fD9DI5bZwQxOi7MhYWnnNPlvXdp/2Pj3XSTRrFs5FQa4mizyGLnJcN6tuvUS6LbmgN1ut+XGSABKvjN0H6Aoow==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/fontawesome.min.js" integrity="sha512-c41hNYfKMuxafVVmh5X3N/8DiGFFAV/tU2oeNk+upk/dfDAdcbx5FrjFOkFhe4MOLaKlujjkyR4Yn7vImrXjzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

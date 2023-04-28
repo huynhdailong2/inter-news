@@ -1,4 +1,6 @@
-
+<?php
+require "../../Model/Position.php";
+?>
 <style>
   div.title{
     margin-top: 20px;
