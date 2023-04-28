@@ -48,13 +48,16 @@ spl_autoload_register();
         <!-- hiên thi noi dung -->
         <div class="container">
             <div class="row">
-                <!-- hien thi noi dung đây -->
-                <?php
+                <div class="col-md-12">
+                    <?php
                 $ctrl = "home";
                 if (isset($_GET["action"])) 
                     $ctrl = $_GET["action"];
                 include "View/front/" . $ctrl . ".php";
                 ?>
+                </div>
+                <!-- hien thi noi dung đây -->
+                
             </div>
         </div>
         <!-- hiên thị footer -->
