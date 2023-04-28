@@ -52,7 +52,7 @@
         <td>
           <img width="50" name="image" height="50" src="../../Assets/back/images/<?php echo $set['image'];?>" alt="">
         </td>
-        <td><?php echo $set['position_id'];?></td>
+        <td><?php echo $set['position_id']?></td>
         <td><?php echo $set['name'];?></td>
         <td><?php echo $set['phone'];?></td>
         <td><?php echo $set['skype'];?></td>

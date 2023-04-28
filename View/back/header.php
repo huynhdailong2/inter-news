@@ -39,15 +39,6 @@
                                 <a class="dropdown-item" href="index.php?action=StaffController&act=Staffs">Staff Management</a>
                             </div>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Doanh nghiệp
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.php?action=doanhnghiep">Quản lý TV Doanh nghiệp</a>
-                                <a class="dropdown-item" href="index.php?action=information">Quản Trị Thành Viên</a>
-                            </div>
-                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?action=CategoryPostController&act=CategoryPost">Category Post</a>
                         </li>
