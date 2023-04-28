@@ -32,10 +32,10 @@
                         <!-- Quản trị Doanh Mục -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Quản Lý Thông Tin
+                                Information Management 
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.php?action=level">Quản Trị Chức Vụ</a>
+                                <a class="dropdown-item" href="index.php?action=PositionController&act=positions">Position Management</a>
                                 <a class="dropdown-item" href="index.php?action=information">Quản Trị Thành Viên</a>
                             </div>
                         </li>

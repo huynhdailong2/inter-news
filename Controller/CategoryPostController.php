@@ -16,7 +16,7 @@
             $icon=$_POST['icon'];
             $description=$_POST['description'];
             $categoryPost=new CategoryPost();
-            $check=$categoryPost->insert($name,$slug,$icon,$description,$datecreate);
+            $check=$categoryPost->insert($name,$slug,$icon,$description);
             if($check!==false){
                 echo "<script>alert('Thêm thành công!')</script>";
                 include "../../View/back/CategoryPost.php";
@@ -26,7 +26,25 @@
             }
             break;
         case 'edit':
-            include "../../View/EditCagoryPost.php";
+            include "../../View/back/EditCategoryPost.php";
+            break;
+        case 'edit_action':
+            if(isset($_GET['id'])){
+                $id=$_GET['id'];
+                $name=$_POST['name'];
+                $slug=$_POST['slug'];
+                $icon=$_POST['icon'];
+                $description=$_POST['description'];
+                $categoryPost=new CategoryPost();
+                $check=$categoryPost->update($id,$name,$slug,$icon,$description);
+                if($check!==false){
+                    echo '<script>alert ("Cập nhật thành công !!")</script>';
+                    include "../../View/back/CategoryPost.php";
+                }else{
+                    echo '<script>alert ("Cập nhật thành công !!")</script>';
+                    include "../../View/back/EditCategoryPost.php";
+                }
+            }
             break;
         case 'delete':
             if(isset($_GET['id'])){

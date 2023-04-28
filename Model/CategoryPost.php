@@ -27,11 +27,16 @@
         }
         public function update($id,$name,$slug,$icon,$description){
             $db=new Connect();
+            $date=new DateTime('Asia/Ho_Chi_Minh');
+            $datecreate=$date->format('Y-m-d H:i:s');
             $sql="update category_posts set 
             name='$name',
             slug='$slug',
             icon='$icon',
-            description='$description' where id=$id";
+            description='$description',
+            created_at='$datecreate' where id=$id";
+            $result=$db->exec($sql);
+            return $result;
         }
         public function delete($id){
             $db=new Connect();

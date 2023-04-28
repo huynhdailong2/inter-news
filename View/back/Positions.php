@@ -16,9 +16,9 @@
   margin-right: 5px;
 }
 </style>
-<div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>CATEGORY POSTS</b></h3></div>
+<div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>POSITIONS</b></h3></div>
 <div class="row col-12 title-2">
-<a href="index.php?action=CategoryPostController&act=insert"><h4>ADD CATEGORY POST</h4></a>
+<a href="index.php?action=PositionController&act=insert"><h4>ADD POSITION</h4></a>
 </div>
 <!-- <div class="row col-12">
 <a href="index.php?action=hoadon"><h4>Xem hóa đơn</h4></a><br/>
@@ -32,26 +32,22 @@
       <tr class="table-primary" align="center">
         <th>Id</th>
         <th>Name</th>
-        <th>Slug</th>
-        <th>Icon</th>
         <th>Description</th>
         <th colspan="3">Actions</th>
       </tr>
     </thead>
     <tbody>
       <?php
-        $categoryPost=new CategoryPost();
-        $result=$categoryPost->AllCategoryPost();
+        $Positions=new Positions();
+        $result=$Positions->AllPosition();
         while($set=$result->fetch()):
       ?>
       <tr>
       <td><?php echo $set['id'];?> </td>
         <td><?php echo $set['name'];?></td>
-        <td><?php echo $set['slug'];?></td>
-        <td><?php echo $set['icon'];?></td>
         <td><?php echo $set['description'];?></td>
-        <td><a href="index.php?action=CategoryPostController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
-        <td><a href="index.php?action=CategoryPostController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
+        <td><a href="index.php?action=PositionController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
+        <td><a href="index.php?action=PositionController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
       </tr>
      <?php
       endwhile;
