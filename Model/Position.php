@@ -42,6 +42,5 @@
             $result=$db->exec($sql);
             return $result;
         }
-        
     }
 ?>
