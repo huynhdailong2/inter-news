@@ -8,7 +8,7 @@
   <div class="menu-container-row head-col header-content">
     <div class="menu-head-logo logo-img">
       <div class="thumb">
-        <img width="186" height="90" src="Content/img/logocopy.png" alt="">
+        <img width="186" height="90" src="./Assets/front/images/logocopy.png" alt="">
       </div>
       <a href="#" class="link" title="Công ty Cổ phần Vinasimex">
         <span class="link-title">Công ty Cổ phần Vinasimex</span>

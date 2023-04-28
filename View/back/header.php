@@ -26,21 +26,30 @@
                     <!-- Links -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=HomeAdminController">Trang Chủ</a>
+                            <a class="nav-link" href="index.php?action=home">Trang Chủ</a>
                         </li>
                         
                         <!-- Quản trị Doanh Mục -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Information Management 
+                                Quản Lý Thông Tin
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.php?action=PositionController&act=positions">Position Management</a>
-                                <a class="dropdown-item" href="index.php?action=StaffController&act=Staffs">Staff Management</a>
+                                <a class="dropdown-item" href="index.php?action=level">Quản Trị Chức Vụ</a>
+                                <a class="dropdown-item" href="index.php?action=information">Quản Trị Thành Viên</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Doanh nghiệp
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index.php?action=doanhnghiep">Quản lý TV Doanh nghiệp</a>
+                                <a class="dropdown-item" href="index.php?action=information">Quản Trị Thành Viên</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=CategoryPostController&act=CategoryPost">Category Post</a>
+                            <a class="nav-link" href="index.php?action=license&act=giayphep">Quản Lý Giấy Phép</a>
                         </li>
                         <!-- Báo cáo -->
                         <!-- <li class="nav-item dropdown">
@@ -55,6 +64,9 @@
                         </li> -->
                         
                         <!-- Báo cáo Tồn kho -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Tồn Kho</a>
+                        </li>
                         <!--Đăng xuất-->
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?action=AdminController&act=logout">Đăng xuất</a>

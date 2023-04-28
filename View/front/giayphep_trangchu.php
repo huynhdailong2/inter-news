@@ -95,7 +95,7 @@ a.a-for-link{
         cơ sở nhu cầu xin giấy phép
         của doanh nghiệp, Công ty Luật Việt An cung cấp dịch vụ xin giấy phép con dưới đây.
     </p>
-    <img style="padding-bottom:30px;" src="./Content/img/Giay-phep-con_trangchu.jpg" style="width: 100%;">
+    <img style="padding-bottom:30px;" src="./Assets/front/images/Giay-phep-con_trangchu.jpg" style="width: 100%;">
     <div class="gioithieu-full" style="text-align:center;">
         <span class="gioithieu-tv">
             <a class="a-title" href="">DỊCH VỤ GIẤY PHÉP KINH DOANH (GIẤY PHÉP CON)</a>

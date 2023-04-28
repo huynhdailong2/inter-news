@@ -18,8 +18,8 @@ spl_autoload_register();
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <!-- end link đăng nhập -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="Content/CSS/header.css" />
-    <link rel="stylesheet" type="text/css" href="Content/CSS/menu.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/front/css/header.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/front/css/menu.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <script type="text/javascript" src="Content/JS/menu.js"></script>
@@ -27,7 +27,7 @@ spl_autoload_register();
 </head>
 <style>
     body {
-        background-image: url('./Content/img/body-bg.jpg');
+        background-image: url('./Assets/front/images/body-bg.jpg');
     }
     .margin{
         margin-left: 90px;
@@ -39,11 +39,11 @@ spl_autoload_register();
 
     <!-- header -->
     <?php
-    include "View/header.php";
+    include "View/front/header.php";
     ?>
     <div class="margin">
         <?php
-        include "View/menu.php";
+        include "View/front/menu.php";
         ?>
         <!-- hiên thi noi dung -->
         <div class="container">
@@ -53,13 +53,13 @@ spl_autoload_register();
                 $ctrl = "home";
                 if (isset($_GET["action"])) 
                     $ctrl = $_GET["action"];
-                include "Controller/" . $ctrl . ".php";
+                include "View/front/" . $ctrl . ".php";
                 ?>
             </div>
         </div>
         <!-- hiên thị footer -->
         <?php
-            include "View/footer.php";
+            include "View/front/footer.php";
         ?>
     </div>
    
