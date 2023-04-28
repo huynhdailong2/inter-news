@@ -55,7 +55,7 @@
           Tư vấn cho nhà đầu tư Việt Nam đầu tư ra nước ngoài: Xin chấp thuận chủ trương đầu tư, giấy phép đầu tư ra nước ngoài.
         </li>
       </ul>
-      <img src="./Assets/front/images/Tu-van-dau-tu-2_trangchu.jpg" style="width: 100%;">
+      <img src="./Content/img/Tu-van-dau-tu-2_trangchu.jpg" style="width: 100%;">
 
        <!--Phần hiển thị thông tin database-->
     <div class="row">

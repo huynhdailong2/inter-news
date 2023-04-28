@@ -7,13 +7,13 @@
     <div class="row">
         <div class="col-sm-3 bg-light" style="text-align: center; ">
             <a class="navbar-brand" href="#">
-                <img src="./Assets/front/images/Do-Thi-thu-Ha-Viet-An-Law-Firm-e1639967036194-160x160xc.jpg" alt="Avatar Logo" style="width:125px;" class="rounded-pill">
+                <img src="Content/img/Do-Thi-thu-Ha-Viet-An-Law-Firm-e1639967036194-160x160xc.jpg" alt="Avatar Logo" style="width:125px;" class="rounded-pill">
             </a>
             <div>
                 <b style="font-size: 12px; color:blue;">TS.LS. ĐỖ THỊ THU HÀ</b><br>
                 09 33 11 33 66 (Zalo, Viber, Whatsapp)
             </div>
-            <p><a href="" style="text-decoration: none; font-size: 15px;"><img src="./Assets/front/images/skype-primary.png">Skype Chat</a></p>
+            <p><a href="" style="text-decoration: none; font-size: 15px;"><img src="Content/img/skype-primary.png">Skype Chat</a></p>
         </div>
         <div class="col-sm-3 bg-light" style="text-align: center;">
             <a class="navbar-brand" href="#">
@@ -55,13 +55,13 @@
         </div>
         <div class="col-sm-3 bg-light" style="text-align: center;">
             <a class="navbar-brand" href="#">
-                <img src="./Assets/front/images/Dong-Van-Thuc-Viet-An-home-160x160xc.jpg" alt="Avatar Logo" style="width:125px;" class="rounded-pill">
+                <img src="Content/img/Dong-Van-Thuc-Viet-An-home-160x160xc.jpg" alt="Avatar Logo" style="width:125px;" class="rounded-pill">
             </a>
             <div>
                 <b style="font-size: 12px; color:blue;">ENGLISH LAWYER, MR. THUC</b><br>
                 09 61 67 55 66 (Zalo, Viber, Whatsapp)
             </div>
-            <p><a href="" style="text-decoration: none; font-size: 15px;"><img src="./Assets/front/images/skype-primary.png">Skype Chat</a></p>
+            <p><a href="" style="text-decoration: none; font-size: 15px;"><img src="Content/img/skype-primary.png">Skype Chat</a></p>
         </div>
     </div>
     <div class="row">
@@ -87,17 +87,17 @@
     <div class="row">
         <div class="col-sm-4 bg-light" style="text-align: center;">
             <a class="navbar-brand" href="#">
-                <img src="./Assets/front/images/admin-ajax.php" alt="Avatar Logo" style="width:125px;">
+                <img src="Content/img/admin-ajax.php" alt="Avatar Logo" style="width:125px;">
             </a>
         </div>
         <div class="col-sm-4 bg-light" style="text-align: center;">
             <a class="navbar-brand" href="#">
-                <img src="./Assets/front/images/logoSaleNoti.png" alt="Avatar Logo">
+                <img src="Content/img/logoSaleNoti.png" alt="Avatar Logo">
             </a>
         </div>
         <div class="col-sm-4 bg-light" style="text-align: center;">
             <a class="navbar-brand" href="#">
-                <img src="./Assets/front/images/admin-ajax (1).php" alt="Avatar Logo" style="width:125px;">
+                <img src="Content/img/admin-ajax (1).php" alt="Avatar Logo" style="width:125px;">
             </a>
         </div>
     </div>

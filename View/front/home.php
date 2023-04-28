@@ -1,5 +1,5 @@
 <style>
-<?php include "Assets/front/css/home.css";
+<?php include "Content/CSS/home.css";
 
 ?>* {
     box-sizing: border-box;
@@ -28,12 +28,12 @@ blockquote {
     transition: all 500ms ease;
 }
 .home-right-editor {
-    background: transparent url("./Assets/front/images/quote-bottom.png") bottom right/24px auto no-repeat scroll;
+    background: transparent url("./Content/img/quote-bottom.png") bottom right/24px auto no-repeat scroll;
     padding-right: 30px;
 }
 
 .home-right-element {
-    background: transparent url("./Assets/front/images/quote-top.png") top 5px left/24px auto no-repeat scroll;
+    background: transparent url("./Content/img/quote-top.png") top 5px left/24px auto no-repeat scroll;
     padding-left: 36px;
     margin-top: 20px;
 }
@@ -45,7 +45,7 @@ blockquote {
 
 .bz-img {
     background: linear-gradient(rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.30)),
-        transparent url("./Assets/front/images/Ts.Ls-Do-Thi-Thu-Ha-768x496.jpg") center center/cover no-repeat scroll;
+        transparent url("./Content/img/Ts.Ls-Do-Thi-Thu-Ha-768x496.jpg") center center/cover no-repeat scroll;
     height:350px;
 }
 
@@ -157,7 +157,7 @@ a.link-center2{
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./Assets/front/images/slide1.jpg" alt="Los Angeles" class="img-slide1"
+                <img src="Content/img/slide1.jpg" alt="Los Angeles" class="img-slide1"
                     style="width: 100%; height: 450px; filter: brightness(60%);">
                 <div class="home-div1-elm home-div3-css bz-title fadeInUp animated" data-animation-in="fadeInUp"
                     data-delay-in="0.3" style="opacity: 1; animation-delay: 0.3s;">
@@ -166,14 +166,14 @@ a.link-center2{
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./Assets/front/images/So-Huu-Tri-Tue.jpg" alt="Chicago" style="width: 100%; height: 450px;">
+                <img src="./Content/img/So-Huu-Tri-Tue.jpg" alt="Chicago" style="width: 100%; height: 450px;">
                 <div class="carousel-caption">
                     <h3>Chicago</h3>
                     <p>Thank you, Chicago!</p>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="./Assets/front/images/Tu-van-doanh-nghiep.jpg" alt="New York" style="width: 100%; height: 450px;">
+                <img src="./Content/img/Tu-van-doanh-nghiep.jpg" alt="New York" style="width: 100%; height: 450px;">
                 <div class="carousel-caption">
                     <h3>New York</h3>
                     <p>We love the Big Apple!</p>
@@ -252,6 +252,7 @@ a.link-center2{
                     </blockquote>
                 </div>
             </div>
+
         </div>
     </div>
 
@@ -263,7 +264,7 @@ a.link-center2{
             <span class="sub-2"></span>
             <div class="row">
                 <div class="col-sm-4 bg-light" style="">
-                    <a href=""><img width="200" height="150" src="././Assets/front/images/Tu-van-doanh-nghiep-mt_trangchu.jpg"></a>
+                    <a href=""><img width="200" height="150" src="./Content/img/Tu-van-doanh-nghiep-mt_trangchu.jpg"></a>
                 </div>
                 <div class="col-sm-8 bg-light" style="">
                     <a href="" style="text-decoration: none; font-size:15px; color:black">
@@ -283,9 +284,9 @@ a.link-center2{
             <span class="sub-2"></span>
             <div class="row">
                 <div class="col-sm-4 bg-light" style="">
-                    <img width="200" height="150" src="././Assets/front/images/Tu-van-so-huu-tri-tue_trangchu.jpg">
+                    <img width="200" height="150" src="./Content/img/Tu-van-so-huu-tri-tue_trangchu.jpg">
                     <noscript>
-                    <img width="200" height="150" src="././Assets/front/images/Tu-van-so-huu-tri-tue_trangchu.jpg">
+                    <img width="200" height="150" src="./Content/img/Tu-van-so-huu-tri-tue_trangchu.jpg">
                     </noscript>
                 </div>
                 <div class="col-sm-8 bg-light" style="font-size:15px;text-align:justify;flex:1;">
@@ -323,7 +324,7 @@ a.link-center2{
             <a href="" style="color: black; text-decoration: none;"><i class="bi bi-check-lg" style="color:orange"></i>
                 Tư vấn hợp đồng</a><br>
             <a href="" style="color: black; text-decoration: none;"><i class="bi bi-check-lg" style="color:orange"></i>
-                Tư vấn giải quyết tranh chấp công ty</a>
+                Tư vấn giải quyết tranh chấp công ty</a><br>
         </div>
         <div class="col-sm-6 bg-light" style=" font-size: 16px;">
             <a href="" style="color: black; text-decoration: none;"><i class="bi bi-check-lg" style="color:orange"></i>

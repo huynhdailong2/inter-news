@@ -27,18 +27,18 @@
       <div class="bz-list nav-icon">
         <div class="item item-1">
           <div class="thumb">
-            <img width="32" height="32" class="entered" src="./Assets/front/images/gb.png" alt="">
+            <img width="32" height="32" class="entered" src="Content/img/gb.png" alt="">
           </div>
           <noscript>
-            <img width="32" height="32" class="entered" src="./Assets/front/images/gb.png" alt="">
+            <img width="32" height="32" class="entered" src="Content/img/gb.png" alt="">
           </noscript>
         </div>
         <div class="item item-2">
           <div class="thumb">
-            <img width="32" height="32" class="entered" src="./Assets/front/images/ja.png" alt="">
+            <img width="32" height="32" class="entered" src="Content/img/ja.png" alt="">
           </div>
           <noscript>
-            <img width="32" height="32" class="entered" src="./Assets/front/images/ja.png" alt="">
+            <img width="32" height="32" class="entered" src="Content/img/ja.png" alt="">
           </noscript>
         </div>
       </div>
