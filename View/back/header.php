@@ -36,7 +36,7 @@
                             </a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="index.php?action=PositionController&act=positions">Position Management</a>
-                                <a class="dropdown-item" href="index.php?action=information">Quản Trị Thành Viên</a>
+                                <a class="dropdown-item" href="index.php?action=StaffController&act=Staffs">Staff Management</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">

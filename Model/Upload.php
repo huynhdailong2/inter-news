@@ -2,7 +2,7 @@
     function uploadimage()
     {
         //B1: tạo ra đường dẫn chứa hình
-        $target_dir="../assets/back/images/";
+        $target_dir="../../Assets/back/images/";
         //b2: lấy tên hình về
         // Content/imagetourdien/giaycongso.jpg
         $target_file=$target_dir.basename($_FILES['image']['name']);

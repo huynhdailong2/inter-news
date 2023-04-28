@@ -3,7 +3,7 @@
 // include "Model/hanghoa.php";
 // include "Model/loaisanpham.php";
 session_start();
-// include './Model/uploadimage.php';
+include '../../Model/upload.php';
 set_include_path(get_include_path().PATH_SEPARATOR.'../../Model/');
 spl_autoload_extensions('.php');
 spl_autoload_register();

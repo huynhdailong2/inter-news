@@ -1,5 +1,5 @@
 <?php
-    class Positions{
+    class Position{
         public function construct(){
 
         }
@@ -30,10 +30,11 @@
             $date=new DateTime('Asia/Ho_Chi_Minh');
             $datecreate=$date->format('Y-m-d H:i:s');
             $sql="update positions set 
-            name=$name,
-            description=$description,
-            created_at=$datacreate where id=$id";
+            name='$name',
+            description='$description',
+            created_at='$datacreate' where id=$id";
             $result=$db->exec($sql);
+            return $result;
         }
         public function delete($id){
             $db=new Connect();
