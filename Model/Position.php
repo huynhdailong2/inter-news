@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
     class Position{
         public function construct(){
@@ -44,3 +45,5 @@
         }
     }
 ?>
+=======
+>>>>>>> 781ec539f8c7b31911e81db8cc45e24b05c1a733
