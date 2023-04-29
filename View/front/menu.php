@@ -4,11 +4,11 @@
   }
   
 </style>
-<section class="head-menu  hide-col" style="">
+<section id="main_header" class="head-menu  hide-col" >
   <div class="menu-container-row head-col header-content">
     <div class="menu-head-logo logo-img">
       <div class="thumb">
-        <img width="186" height="90" src="Content/img/logocopy.png" alt="">
+        <img width="186" height="90" src="./Assets/front/images/logocopy.png" alt="">
       </div>
       <a href="#" class="link" title="Công ty Cổ phần Vinasimex">
         <span class="link-title">Công ty Cổ phần Vinasimex</span>
@@ -364,4 +364,28 @@
     </div>
   </div>
 </section>
-
+<script>
+  if (document.getElementById("main_header") != null) {
+    setInterval(function () {
+      var MenuHeight = document.getElementById("main_header").offsetHeight;
+      $("#main_header").css("height", MenuHeight + "px");
+      var scroll_position = jQuery("#main_header").offset().top;
+      var screen_height = jQuery(window).height();
+      var activation_offset = 0;
+      var max_scroll_height = jQuery("body").height() + screen_height;
+      var scroll_activation_point =
+        scroll_position - screen_height * activation_offset;
+      $(window).scroll(function () {
+        var y_scroll_pos = window.pageYOffset;
+        var element_in_view = y_scroll_pos > scroll_activation_point;
+        var has_reached_bottom_of_page =
+          max_scroll_height <= y_scroll_pos && !element_in_view;
+        if (element_in_view || has_reached_bottom_of_page) {
+          jQuery(".header-content").addClass("fixed").fadeIn();
+        } else {
+          jQuery(".header-content").removeClass("fixed");
+        }
+      });
+    }, 500);
+  }
+</script>

@@ -16,7 +16,7 @@
         qua đó giúp cho doanh nghiệp có sự ổn định trong kinh doanh, tránh được những rui ro pháp lý có thể xẩy ra trong tương lai cũng như xây dựng
         phát triển bền vững cho doanh nghiệp trên con đường kinh doanh tại Việt Nam cũng như hội nhập thị trường quốc tế.
     </p>
-    <img src="./Content/img/doanhnghiep_trangchu.jpg" style="width: 100%;">
+    <img src="./Assets/front/images/doanhnghiep_trangchu.jpg" style="width: 100%;">
 
      <!--Phần hiển thị thông tin database-->
      <div class="row">

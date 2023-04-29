@@ -1,6 +1,4 @@
-<?php
-require "../../Model/Staff.php";
-?>
+
 <style>
   div.title{
     margin-top: 20px;
