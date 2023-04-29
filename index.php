@@ -24,7 +24,9 @@ spl_autoload_register();
     <link rel="stylesheet" type="text/css" href="Content/CSS/menu.css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
-    <script type="text/javascript" src="Content/JS/menu.js"></script>
+    <script type="text/javascript" src="./Assets/front/js/menu.js"></script>
+    <link rel="stylesheet" href="./Assets/front/css/header.css">
+    <link rel="stylesheet" href="./Assets/front/css/home.css">
     <title>SanPham</title>
 </head>
 <style>
@@ -41,11 +43,11 @@ spl_autoload_register();
 
     <!-- header -->
     <?php
-    include "View/header.php";
+    include "./View/front/header.php";
     ?>
     <div class="margin">
         <?php
-        include "View/menu.php";
+        include "./View/front/menu.php";
         ?>
         <!-- hiên thi noi dung -->
         <div class="container">
@@ -55,13 +57,13 @@ spl_autoload_register();
                 $ctrl = "home";
                 if (isset($_GET["action"])) 
                     $ctrl = $_GET["action"];
-                include "Controller/" . $ctrl . ".php";
+                include "./View/front/" . $ctrl . ".php";
                 ?>
             </div>
         </div>
         <!-- hiên thị footer -->
         <?php
-            include "View/footer.php";
+            include "./View/front/footer.php";
         ?>
     </div>
    
