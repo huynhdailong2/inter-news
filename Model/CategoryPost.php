@@ -9,9 +9,45 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //danh mục Giới thiệu
         public function showCategoryGT(){
             $db=new Connect();
             $sql="select * from category_posts where description='gioithieu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //danh mục doanh nghiệp
+        public function showCategoryDN(){
+            $db=new Connect();
+            $sql="select * from category_posts where description='doanhnghiep'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //danh mục sở hữu trí tuệ
+        public function showCategorySHTT(){
+            $db=new Connect();
+            $sql="select * from category_posts where description='sohuutritue'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //danh mục đầu tư
+        public function showCategoryDT(){
+            $db=new Connect();
+            $sql="select * from category_posts where description='dautu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //danh mục giấy phép
+        public function showCategoryGP(){
+            $db=new Connect();
+            $sql="select * from category_posts where description='giayphep'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //danh mục kế toán-thuế
+        public function showCategoryKTT(){
+            $db=new Connect();
+            $sql="select * from category_posts where description='ketoan-thue'";
             $result=$db->getList($sql);
             return $result;
         }
@@ -41,7 +77,7 @@
             icon='$icon',
             description='$description',
             title='$title',
-            created_at='$datecreate' where id=$id";
+            updated_at='$datecreate' where id=$id";
             $result=$db->exec($sql);
             return $result;
         }
