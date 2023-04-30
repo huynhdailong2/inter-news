@@ -35,10 +35,10 @@
       </a>
       <ul class="vnsm-title prog-container" id="nav_header">
         <li class="menu-item menu-item-post-type menu-li1">
-          <a class="hasub menu_link a-ac nav-link active" style="color:#00578a;" href="index.php?action=HomeFrontController">TRANG CHỦ</a>
+          <a class="hasub menu_link a-ac nav-link active" style="color:#00578a;" href="trangchu">TRANG CHỦ</a>
         </li>
         <li class="menu-item menu-item-toxonomy menu-item-cate">
-          <a href="index.php?action=FrontendController&act=gioithieu" class="hasub menu_link" >GIỚI THIỆU</a>
+          <a href="gioithieu" class="hasub menu_link" >GIỚI THIỆU</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
             <div class="mngt-elm vnsm-list">
               <?php
@@ -56,7 +56,7 @@
           </section>
         </li>
         <li class="menu-item menu-item-toxonomy menu-item-cate">
-          <a href="index.php?action=link&act=doanhnghiep" class="hasub menu_link a-ac">DOANH NGHIỆP</a>
+          <a href="doanhnghiep" class="hasub menu_link a-ac">DOANH NGHIỆP</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
             <div class="mngt-elm vnsm-list">
               <?php
@@ -76,7 +76,7 @@
           </section>
         </li>
         <li class="menu-item menu-item-toxonomy menu-item-cate">
-          <a href="#" class="hasub menu_link a-ac">SỞ HỮU TRÍ TUỆ</a>
+          <a href="sohuutritue" class="hasub menu_link a-ac">SỞ HỮU TRÍ TUỆ</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
             <div class="mngt-elm vnsm-list">
               <?php
@@ -96,7 +96,7 @@
           </section>
         </li>
         <li class="menu-item menu-item-toxonomy menu-item-cate">
-          <a href="index.php?action=link&act=dautu" class="hasub menu_link a-ac">ĐẦU TƯ</a>
+          <a href="dautu" class="hasub menu_link a-ac">ĐẦU TƯ</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
             <div class="mngt-elm vnsm-list">
               <?php
@@ -116,7 +116,7 @@
           </section>
         </li>
         <li class="menu-item menu-item-toxonomy menu-item-cate">
-          <a href="index.php?action=link&act=giayphep" class="hasub menu_link a-ac">GIẤY PHÉP</a>
+          <a href="giayphep" class="hasub menu_link a-ac">GIẤY PHÉP</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
             <div class="mngt-elm vnsm-list">
               <?php
@@ -156,7 +156,7 @@
           </section>
         </li>
         <li class="menu-item menu-item-toxonomy menu-item-cate">
-          <a href="#" class="hasub menu_link a-ac">VỤ VIỆC-VỤ ÁN</a>
+          <a href="vuviecvuan" class="hasub menu_link a-ac">VỤ VIỆC-VỤ ÁN</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
           </section>
         </li>
