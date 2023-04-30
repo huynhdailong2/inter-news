@@ -19,6 +19,7 @@ div.title {
       $slug=$result['slug'];
       $icon=$result['icon'];
       $description=$result['description'];
+      $title=$result['title'];
     }
   ?>
     <!--tạo thẻ form-->
@@ -52,6 +53,11 @@ div.title {
             <td>Description</td>
             <td><input type="text" class="form-control" name="description"
                     value="<?php if(isset($description)) echo $description;?>" maxlength="1000px"></td>
+        </tr>
+        <tr>
+            <td>Title</td>
+            <td><input type="text" class="form-control" name="title" value="<?php if(isset($title)) echo $title;?>"
+                    maxlength="1000px"></td>
         </tr>
         <tr>
             <td colspan="2">

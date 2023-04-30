@@ -108,10 +108,16 @@ form{
 }
 .head-col {
   width: 100%;
-  max-width: 1170px;
+  max-width: 1300px;
   margin: 0 auto;
   padding-left: 15px;
 }
+.header_content .logo img {
+  transition: all 365ms ease;
+  width: auto
+}
+
+
 .head-menu .menu-head-logo {
   margin-right: auto;
   width: auto;
@@ -318,3 +324,19 @@ div{
   height: 450px;
 }
  
+/*menu header*/
+body .header-content.fixed .logo-img img {
+  max-height: 50px;
+  width: auto;
+  transition: all 365ms ease
+}
+.header-content.fixed {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 999;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+
+}
+/*end menu header*/
