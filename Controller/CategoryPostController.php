@@ -15,8 +15,9 @@
             $slug=$_POST['slug'];
             $icon=$_POST['icon'];
             $description=$_POST['description'];
+            $title=$_POST['title'];
             $categoryPost=new CategoryPost();
-            $check=$categoryPost->insert($name,$slug,$icon,$description);
+            $check=$categoryPost->insert($name,$slug,$icon,$description,$title);
             if($check!==false){
                 echo "<script>alert('Thêm thành công!')</script>";
                 include "../../View/back/CategoryPost.php";
@@ -35,8 +36,9 @@
                 $slug=$_POST['slug'];
                 $icon=$_POST['icon'];
                 $description=$_POST['description'];
+                $title=$_POST['title'];
                 $categoryPost=new CategoryPost();
-                $check=$categoryPost->update($id,$name,$slug,$icon,$description);
+                $check=$categoryPost->update($id,$name,$slug,$icon,$description,$title);
                 if($check!==false){
                     echo '<script>alert ("Cập nhật thành công !!")</script>';
                     include "../../View/back/CategoryPost.php";
