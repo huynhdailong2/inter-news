@@ -27,11 +27,8 @@ include "./Config/Connect.php";
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <script type="text/javascript" src="./Assets/front/js/menu.js"></script>
-<<<<<<< HEAD
-=======
     <link rel="stylesheet" href="./Assets/front/css/header.css">
     <link rel="stylesheet" href="./Assets/front/css/home.css">
->>>>>>> 3776a4f380c1c33445257e68006c11f97c9d0b27
     <title>SanPham</title>
 </head>
 <style>
