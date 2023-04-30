@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteRule ^index.php?action=HomeFrontController$ trangchu [NC]
+RewriteRule ^([A-Za-z]+)$ index.php?action=FrontendController&act=$1
