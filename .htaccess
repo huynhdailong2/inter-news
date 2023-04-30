@@ -2,3 +2,9 @@ RewriteEngine On
 
 RewriteRule ^index.php?action=HomeFrontController$ trangchu [NC]
 RewriteRule ^([A-Za-z]+)$ index.php?action=FrontendController&act=$1
+RewriteRule ^luat-viet-an$ index.php?action=FrontendController&act=gioithieu
+RewriteRule ^tu-van-doanh-nghiep$ index.php?action=FrontendController&act=doanhnghiep
+RewriteRule ^so-huu-tri-tue$ index.php?action=FrontendController&act=sohuutritue
+RewriteRule ^tu-van-dau-tu$ index.php?action=FrontendController&act=dautu
+RewriteRule ^tu-van-giay-phep$ index.php?action=FrontendController&act=giayphep
+RewriteRule ^giai-quyet-tranh-chap$ index.php?action=FrontendController&act=vuviecvuan

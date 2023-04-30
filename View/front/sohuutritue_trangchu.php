@@ -1,4 +1,4 @@
-<div class="gioithieu" style="background: rgb(251, 255, 251); margin-left: 90px; margin-right: 90px;">
+<div class="gioithieu" style="background: rgb(251, 255, 251);">
     <h3 style="color: green; text-align: center;">TƯ VẤN SỞ HỮU TRÍ TUỆ</h3>
     <p>
         Công ty Luật Việt An được khách hàng biết đến không chỉ là một đơn vị cung cấp dịch vụ pháp lý mà còn là một Tổ chức đại diện sở hữu trí
@@ -17,7 +17,7 @@
         hảo nhất, nhanh nhất và hiệu quả nhất nhằm giúp doanh nghiệp bảo vệ được tài sản sở hữu trí tuệ của mình tại Việt Nam và các quốc gia trên 
         thế giới.
     </p>
-    <img src="./Content/img/ls-so-huu-tri-tue_trangchu.jpg" style="width: 100%;">
+    <img src="./Assets/front/images/ls-so-huu-tri-tue_trangchu.jpg" style="width: 100%;">
 
      <!--Phần hiển thị thông tin database-->
      <div class="row">

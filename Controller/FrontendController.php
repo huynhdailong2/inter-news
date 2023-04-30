@@ -4,9 +4,6 @@
         $act=$_GET['act'];
     }
     switch($act){
-        case 'trangchu':
-            include "./View/front/home.php";
-            break;
         case 'gioithieu':
             include "./View/front/gioithieu_trangchu.php";
             break;
