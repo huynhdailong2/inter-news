@@ -14,7 +14,7 @@
   font-size: 12px;
   line-height: 12px;
   margin-right: 5px;
-}
+  }
 </style>
 <div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>CATEGORY POSTS</b></h3></div>
 <div class="row col-12 title-2">
@@ -35,6 +35,7 @@
         <th>Slug</th>
         <th>Icon</th>
         <th>Description</th>
+        <th>Title</th>
         <th colspan="3">Actions</th>
       </tr>
     </thead>
@@ -48,11 +49,9 @@
       <td><?php echo $set['id'];?> </td>
         <td><?php echo $set['name'];?></td>
         <td><?php echo $set['slug'];?></td>
-        <td><i style="color: #ff9800;
-  font-size: 12px;
-  line-height: 12px;
-  margin-right: 5px;" class="<?php echo $set['icon'];?>"></i></td>
+        <td><i class="<?php echo $set['icon'];?>"></i></td>
         <td><?php echo $set['description'];?></td>
+        <td><?php echo $set['title'];?></td>
         <td><a href="index.php?action=CategoryPostController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
         <td><a href="index.php?action=CategoryPostController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
       </tr>
