@@ -77,7 +77,7 @@ hr{
       <p class="p-title">
       Công ty luật Việt An hỗ trợ hàng ngàn lượt khách hàng về các thủ tục về thuế, dịch vụ kế toán thuế, quyết toán thuế, báo cáo tài chính hàng năm với sự am hiểu tinh tường về pháp luật, sắc bén về nghiệp vụ chuyên môn kế toán thực sự là chỗ dựa tin cậy cho các doanh nghiệp vốn Việt Nam và doanh nghiệp vốn đầu tư nước ngoài tại Việt Nam trong lĩnh vực kế toán thuế.
       </p>
-    <img src="./Content/img/Viet-An-Law-GioiThieu.jpg" style="width: 100%;">
+    <img src="./Assets/front/images/Viet-An-Law-GioiThieu.jpg" style="width: 100%;">
    <div class="gioithieu-full" style="text-align:center;">
       <span class="gioithieu-tv">
           <a href="">LUẬT SƯ VÀ CỘNG SỰ</a>
@@ -86,26 +86,23 @@ hr{
     <!--Phần hiển thị thông tin database-->
     <div class="row">
         <?php
-          $infor=new informationfe();
-          $result=$infor->showIn4();
+          $Staff=new Staff();
+          $result=$Staff->StaffAll();
           while($set=$result->fetch()):
         ?>
           <div class="col-lg-3 col-md-4 mb-3 text-left form-all">
               <!--Thẻ hình ảnh-->
               <div class="view overlay z-depth-1-half">
-                <img width="380" height="280" style="max-width:100%" src="admin/Content/images/<?php echo $set['image']?>" alt="">
-                <noscript>
-                <img width="380" height="280" style="max-width:100%" src="admin/Content/images/<?php echo $set['image']?>" alt="">
-                </noscript>
+                <img width="380" height="280" style="max-width:100%" src="./Assets/back/images/<?php echo $set['image']?>" alt="">
               </div>
               <!--Thẻ tên-->
-              <h5 class="font-weight-bold form-name"><?php echo $set['in4_name']?></h5>
+              <h5 class="font-weight-bold form-name"><?php echo $set['name']?></h5>
               <div class="form-in4">
                 <p>
-                  <strong><?php echo $set['level_name']?></strong>
+                  <strong><?php echo $set['position_name']?></strong>
                 </p>
-                <p>Phone: <?php echo $set['in4_phone']?></p>
-                <p>Email: <?php echo $set['in4_email']?></p>
+                <p>Phone: <?php echo $set['phone']?></p>
+                <p>Email: <?php echo $set['email']?></p>
               </div>  
           </div>
         <?php

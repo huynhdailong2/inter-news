@@ -53,7 +53,7 @@ include "../../Config/Connect.php";
 <?php
         if(isset($_SESSION['email']) && isset($_SESSION['password']) )
         {
-            include "./header.php";
+            include "../../View/back/header.php";
         }
             
         ?>
@@ -79,7 +79,7 @@ include "../../Config/Connect.php";
     <?php
     if(isset($_SESSION['email']) && isset($_SESSION['password']))
     {
-        include "./footer.php";
+        include "../../View/back/footer.php";
     }
         
     ?>

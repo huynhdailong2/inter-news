@@ -59,7 +59,7 @@ include "./Config/Connect.php";
                 $ctrl="HomeFrontController";
                 if (isset($_GET["action"])) 
                     $ctrl = $_GET["action"];
-                include "./View/front/" . $ctrl . ".php";
+                include "Controller/" . $ctrl . ".php";
                 ?>
             </div>
         </div>

@@ -16,9 +16,9 @@
   margin-right: 5px;
 }
 </style>
-<div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>STAFF MANAGER</b></h3></div>
+<div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>CATEGORY BUSINESS MANAGEMENT</b></h3></div>
 <div class="row col-12 title-2">
-<a href="index.php?action=StaffController&act=insert"><h4>ADD STAFF</h4></a>
+<a href="index.php?action=CategoryBusinessController&act=insert"><h4>ADD CATEGORY BUSINESS</h4></a>
 </div>
 <!-- <div class="row col-12">
 <a href="index.php?action=hoadon"><h4>Xem hóa đơn</h4></a><br/>
@@ -32,19 +32,19 @@
       <tr class="table-primary" align="center">
         <th>Id</th>
         <th>Image</th>
-        <th>Position_id</th>
+        <th>test</th>
         <th>Name</th>
-        <th>Phone</th>
-        <th>Skype</th>
-        <th>Email</th>
         <th>Description</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>URL</th>
         <th colspan="2">Actions</th>
       </tr>
     </thead>
     <tbody>
       <?php
-        $Staff=new Staff();
-        $result=$Staff->StaffAll();
+        $CategoryBusiness=new CategoryBusiness();
+        $result=$CategoryBusiness->CategoryBusinessAll();
         while($set=$result->fetch()):
       ?>
       <tr>
@@ -52,14 +52,13 @@
         <td>
           <img width="50" name="image" height="50" src="../../Assets/back/images/<?php echo $set['image'];?>" alt="">
         </td>
-        <td><?php echo $set['position_id']?></td>
         <td><?php echo $set['name'];?></td>
-        <td><?php echo $set['phone'];?></td>
-        <td><?php echo $set['skype'];?></td>
-        <td><?php echo $set['email'];?></td>
         <td><?php echo $set['description'];?></td>
-        <td><a href="index.php?action=StaffController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
-        <td><a href="index.php?action=StaffController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
+        <td><?php echo $set['phone'];?></td>
+        <td><?php echo $set['email'];?></td>
+        <td><?php echo $set['url'];?></td>
+        <td><a href="index.php?action=CategoryBusinessController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
+        <td><a href="index.php?action=CategoryBusinessController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
       </tr>
      <?php
       endwhile;

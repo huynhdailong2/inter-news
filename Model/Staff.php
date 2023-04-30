@@ -5,7 +5,7 @@
         }
         public function StaffAll(){
             $db=new Connect();
-            $sql="select * from staffs";
+            $sql="select staffs.*,positions.name as position_name from staffs,positions where staffs.position_id=positions.id";
             $result=$db->getList($sql);
             return $result;
         }

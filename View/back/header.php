@@ -32,29 +32,27 @@
                         <!-- Quản trị Doanh Mục -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Information Management 
+                                Information Manager
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.php?action=PositionController&act=positions">Position Management</a>
-                                <a class="dropdown-item" href="index.php?action=StaffController&act=Staffs">Staff Management</a>
+                                <a class="dropdown-item" href="index.php?action=PositionController&act=positions">Position Manager</a>
+                                <a class="dropdown-item" href="index.php?action=StaffController&act=Staffs">Staff Manager</a>
+                            </div>
+                        </li>
+                        <!--Quản lí danh mục-->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Category Manager 
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index.php?action=CategoryPostController&act=CategoryPost">Category Post</a>
+                                <a class="dropdown-item" href="index.php?action=CategoryBusinessController&act=CategoryBusiness">Category Business</a>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=CategoryPostController&act=CategoryPost">Category Post</a>
+                            <a class="nav-link" href="quan-ly-danh-muc-bai-viet">Category Post</a>
                         </li>
-                        <!-- Báo cáo -->
-                        <!-- <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                Báo Cáo
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.php?action=thongkeMonth">Tháng</a>
-                                <a class="dropdown-item" href="index.php?action=thongkeYear">Năm</a>
-                                <a class="dropdown-item" href="index.php?action=thongkeQuy">Quý</a>
-                            </div>
-                        </li> -->
                         
-                        <!-- Báo cáo Tồn kho -->
                         <!--Đăng xuất-->
                         <li class="nav-item">
                             <a class="nav-link" href="index.php?action=AdminController&act=logout">Đăng xuất</a>

@@ -2,56 +2,39 @@
 div.title {
     margin-top: 30px;
 }
-</style>
+</style>    
 
-<div class="col-md-12 col-12 col-md-offset-4 title"><h3><b>ADD STAFF</b></h3></div>
+<div class="col-md-12 col-12 col-md-offset-4 title"><h3><b>ADD CATEGORY BUSINESS</b></h3></div>
 
 <div class="row col-md-12 col-md-offset-4">
     <?php
     if(isset($_GET['id'])){
       $id=$_GET['id'];
-      $Staff=new Staff();
-      $result=$Staff->StaffId($id);
+      $CategoryBusiness=new CategoryBusiness();
+      $result=$CategoryBusiness->CategoryBusinessId($id);
       $id=$result['id'];
-      $position_id=$result['position_id'];
       $name=$result['name'];
-      $phone=$result['phone'];
-      $skype=$result['skype'];
-      $email=$result['email'];
       $description=$result['description'];
+      $phone=$result['phone'];
+      $email=$result['email'];
+      $url=$result['url'];
       $image=$result['image'];
     }
   ?>
     <!--tạo thẻ form-->
 
-    <form action="index.php?action=StaffController&act=insert_action" method="post" enctype="multipart/form-data">
-    <a style="margin-top:20px;margin-bottom:20px;" href="index.php?action=StaffController&act=Staffs" type="button" class="btn btn-default">Back</a>
+    <form action="index.php?action=CategoryBusinessController&act=insert_action" method="post" enctype="multipart/form-data">
+    <a style="margin-top:20px;margin-bottom:20px;" href="index.php?action=CategoryBusinessController&act=CategoryBusiness" type="button" class="btn btn-default">Back</a>
     <table class="table" style="border: 0px;">
         <tr>
-            <td>Staff ID</td>
+            <td>ID</td>
             <td> <input type="text" class="form-control" name="id" value="<?php if(isset($id)) echo $id;?>"
                     readonly /></td>
         </tr>
         <tr>
-            <td>Staff Name</td>
+            <td>Name</td>
             <td><input type="text" class="form-control" name="name"
                     value="<?php if(isset($name)) echo $name;?>" maxlength="100px"></td>
-        </tr>
-        <tr>
-            <td>Position_id</td>
-            <td>
-                <select name="position_id" class="form-control" style="width:150px;">
-                    <?php
-                    $Position=new Position();
-                    $result=$Position->AllPosition();
-                    while($set=$result->fetch()):
-                    ?>
-                        <option value="<?php echo $set['id'];?>"><?php echo $set['name'];?></option>
-                    <?php
-                    endwhile;
-                    ?>
-                </select>
-            </td>
         </tr>
         <tr>
             <td>Phone</td>
@@ -64,13 +47,13 @@ div.title {
                     value="<?php if(isset($email)) echo $email;?>" maxlength="100px"></td>
         </tr>
         <tr>
-            <td>Skype</td>
-            <td><input type="text" class="form-control" name="skype" value="<?php if(isset($skype)) echo $skype;?>"
+            <td>Description</td>
+            <td><input type="text" class="form-control" name="description" value="<?php if(isset($description)) echo $description;?>"
                     maxlength="100px"></td>
         </tr>
         <tr>
-            <td>Description</td>
-            <td><input type="text" class="form-control" name="description" value="<?php if(isset($description)) echo $description;?>"
+            <td>URL</td>
+            <td><input type="text" class="form-control" name="url" value="<?php if(isset($url)) echo $url;?>"
                     maxlength="100px"></td>
         </tr>
         <tr>
