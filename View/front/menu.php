@@ -2,7 +2,22 @@
   .click{
     color:#ff9800;
   }
-  
+  body .header-content.fixed .logo-img img {
+  max-height: 50px;
+  width: auto;
+  transition: all 365ms ease
+}
+.header-content.fixed {
+  position: fixed;
+  top: 0;
+  max-width:1200px;
+  width:100%;
+  left: 50%;
+  transform: translatex(-50%);
+  z-index: 999;
+  box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+
+}
 </style>
 <section id="main_header" class="head-menu  hide-col" >
   <div class="menu-container-row head-col header-content">
@@ -26,46 +41,17 @@
           <a href="index.php?action=link&act=gioithieu" class="hasub menu_link" >GIỚI THIỆU</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
             <div class="mngt-elm vnsm-list">
+              <?php
+              $categoryPost=new CategoryPost();
+              $result=$categoryPost->showCategoryGT();
+              while($set=$result->fetch()):
+              ?>
               <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Giới thiệu chung</div>
-                <a href="#" title="Công ty Cổ phần Vinasimex" class="link">Công ty Cổ phần BLUSZA</a>
+                <i class="<?php echo $set['icon']?>"></i>
+                <div class="title"><?php echo $set['name']?></div>
+                <a href="#" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
               </div>
-              <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Đội ngũ nhân sự</div>
-                <a href="#" title="Luật sư và các cộng sự" class="link">Luật sư và các cộng sự</a>
-              </div>
-              <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Thương hiệu BLUSZA</div>
-                <a href="#" title="Thương hiệu CTCP Vinasimex" class="link">Thương hiệu BLUSZA</a>
-              </div>
-              <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Đánh giá của cơ quan quản lý</div>
-                <a href="#" title="Công ty Cổ phần Vinasimex" class="link">Đánh giá của cơ quan quản lý</a>
-              </div>
-              <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Tuyển dụng</div>
-                <a href="#" title="Công ty Cổ phần Vinasimex" class="link">Tuyển dụng</a>
-              </div>
-              <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Liên hệ công ty BLUSZA</div>
-                <a href="#" title="Công ty Cổ phần Vinasimex" class="link">Liên hệ công ty BLUSZA</a>
-              </div>
-              <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Chính sách bảo mật thông tin</div>
-                <a href="#" title="Công ty Cổ phần Vinasimex" class="link">Liên hệ công ty BLUSZA</a>
-              </div>
-              <div class="item item-1 current">
-                <i class="icon fa-dot-circle"></i>
-                <div class="title">Công ty luật tại Việt Nam</div>
-                <a href="#" title="Công ty Cổ phần Vinasimex" class="link">Liên hệ công ty BLUSZA</a>
-              </div>
+              <?php endwhile; ?>
             </div>
           </section>
         </li>
