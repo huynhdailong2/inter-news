@@ -45,12 +45,10 @@
                                 Category Manager 
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.php?action=CategoryPostController&act=CategoryPost">Category Post</a>
+                                <a class="dropdown-item" href="quan-ly-danh-muc-bai-viet">Category Post</a>
                                 <a class="dropdown-item" href="index.php?action=CategoryBusinessController&act=CategoryBusiness">Category Business</a>
+                                <a class="dropdown-item" href="index.php?action=CategoryRelatedController&act=CategoryRelated">Category Related</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="quan-ly-danh-muc-bai-viet">Category Post</a>
                         </li>
                         
                         <!--Đăng xuất-->

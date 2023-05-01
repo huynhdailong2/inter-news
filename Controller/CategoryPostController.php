@@ -5,10 +5,10 @@
     }
     switch($act){
         case "CategoryPost":
-            include "../../View/back/CategoryPost.php";
+            include "../../View/back/CategoryPosts/CategoryPost.php";
             break;
         case "insert":
-            include "../../View/back/AddCategoryPost.php";
+            include "../../View/back/CategoryPosts/AddCategoryPost.php";
             break;
         case 'insert_action':
             $name=$_POST['name'];
@@ -20,14 +20,14 @@
             $check=$categoryPost->insert($name,$slug,$icon,$description,$title);
             if($check!==false){
                 echo "<script>alert('Thêm thành công!')</script>";
-                include "../../View/back/CategoryPost.php";
+                include "../../View/back/CategoryPosts/CategoryPost.php";
             }else{
                 echo "<script>alert('Thêm không thành công,Vui lòng nhập lại!')</script>";
-                include "../../View/back/AddCategoryPost.php";
+                include "../../View/back/CategoryPosts/AddCategoryPost.php";
             }
             break;
         case 'edit':
-            include "../../View/back/EditCategoryPost.php";
+            include "../../View/back/CategoryPosts/EditCategoryPost.php";
             break;
         case 'edit_action':
             if(isset($_GET['id'])){
@@ -41,10 +41,10 @@
                 $check=$categoryPost->update($id,$name,$slug,$icon,$description,$title);
                 if($check!==false){
                     echo '<script>alert ("Cập nhật thành công !!")</script>';
-                    include "../../View/back/CategoryPost.php";
+                    include "../../View/back/CategoryPosts/CategoryPost.php";
                 }else{
                     echo '<script>alert ("Cập nhật thành công !!")</script>';
-                    include "../../View/back/EditCategoryPost.php";
+                    include "../../View/back/CategoryPosts/EditCategoryPost.php";
                 }
             }
             break;
@@ -54,7 +54,7 @@
                 $categoryPost=new CategoryPost();
                 $categoryPost->delete($id);
                 echo "<script>alert('Xoá thành công')</script>";
-                include "../../View/back/CategoryPost.php";
+                include "../../View/back/CategoryPosts/CategoryPost.php";
             }
     }
 ?>  

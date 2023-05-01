@@ -5,10 +5,10 @@
     }
     switch($act){
         case 'Staffs':
-            include "../../View/back/Staff.php";
+            include "../../View/back/Staffs/Staff.php";
             break;
         case 'insert':
-            include "../../View/back/AddStaff.php";
+            include "../../View/back/Staffs/AddStaff.php";
             break;
         case 'insert_action':
             $image=$_FILES['image']['name'];
@@ -23,14 +23,14 @@
             if($check!=false){
                 uploadimage();
                 echo "<script>alert('Thêm thành công!')</script>";
-                include "../../View/back/Staff.php";
+                include "../../View/back/Staffs/Staff.php";
             }else{
                 echo "<script>alert('Thêm không thành công,vui lòng nhập lại!')</script>";
-                include "../../View/back/AddStaff.php";
+                include "../../View/back/Staffs/AddStaff.php";
             }
             break;
         case 'edit':
-            include "../../View/back/EditStaff.php";
+            include "../../View/back/Staffs/EditStaff.php";
             break;
         case 'edit_action':
             if(isset($_GET['id'])){
@@ -47,10 +47,10 @@
                 if($check!==false){
                     uploadimage();
                     echo "<script>alert('Cập nhật thành công!')</script>";
-                    include "../../View/back/Staff.php";
+                    include "../../View/back/Staffs/Staff.php";
                 }else{
                     echo "<script>alert('Cập nhật không thành công,vui lòng nhập lại !')</script>";
-                    include "../../View/back/EditStaff.php";
+                    include "../../View/back/Staffs/EditStaff.php";
                 }
             }
             break;
@@ -60,7 +60,7 @@
                 $Staff=new Staff();
                 $Staff->delete($id);
                 echo "<script>alert('Xoá thành công!')</script>";
-                include "../../View/back/Staff.php";
+                include "../../View/back/Staffs/Staff.php";
             }
             break;
     }

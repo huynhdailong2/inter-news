@@ -12,6 +12,8 @@
   .gioithieu-full{
     position:relative;
     padding-bottom:20px;
+    margin-top: 20px;
+
     
   }
   .gioithieu-full::after{

@@ -31,10 +31,10 @@
             $sql="update category_business set 
             image='$image',
             name='$name',
-            position_id=$position_id,
+            description='$description',
             phone='$phone',
             email='$email',
-            image='$image',
+            url='$url',
             updated_at='$dateupdate' where id=$id";
             $result=$db->exec($sql);
             return $result;

@@ -5,10 +5,10 @@
     }
     switch($act){
         case 'positions':
-            include '../../View/back/Position.php';
+            include '../../View/back/Positions/Position.php';
             break;
         case 'insert':
-            include '../../View/back/AddPosition.php';
+            include '../../View/back/Positions/AddPosition.php';
             break;
         case 'insert_action':
             $name=$_POST['name'];
@@ -17,14 +17,14 @@
             $check=$Position->insert($name,$description);
             if($check!=false){
                 echo "<script>alert('Thêm thành công!')</script>";
-                include "../../View/back/Position.php";
+                include "../../View/back/Positions/Position.php";
             }else{
                 echo "<script>alert('Thêm không thành công!')</script>";
-                include "../../View/back/AddPosition.php";
+                include "../../View/back/Positions/AddPosition.php";
             }
             break;
         case 'edit':
-            include "../../View/back/EditPosition.php";
+            include "../../View/back/Positions/EditPosition.php";
             break;
         case 'edit_action':
             if(isset($_GET['id'])){
@@ -35,10 +35,10 @@
                 $check=$Position->update($id,$name,$description);
                 if($check!==false){
                     echo "<script>alert('Cập nhật thành công!')</script>";
-                    include "../../View/back/Position.php";
+                    include "../../View/back/Positions/Position.php";
                     }else{
                         echo "<script>alert('Cập nhật không thành công!')</script>";
-                        include "../../View/back/EditPosition.php";
+                        include "../../View/back/Positions/EditPosition.php";
                     }
             }
             break;
@@ -48,7 +48,7 @@
                 $Position=new Position();
                 $Position->delete($id);
                 echo "<script>alert('Xoá thành công!')</script>";
-                    include "../../View/back/Position.php";
+                    include "../../View/back/Positions/Position.php";
             }
             break;
             

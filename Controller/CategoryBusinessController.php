@@ -5,10 +5,10 @@
     }
     switch($act){
         case 'CategoryBusiness':
-            include "../../View/back/CategoryBusiness.php";
+            include "../../View/back/CategoryBusiness/CategoryBusiness.php";
             break;
         case 'insert':
-            include '../../View/back/AddCategoryBusiness.php';
+            include '../../View/back/CategoryBusiness/AddCategoryBusiness.php';
             break;
         case 'insert_action':
             $name=$_POST['name'];
@@ -22,14 +22,14 @@
             if($check!==false){
                 uploadimage();
                 echo "<script>alert('Thêm thành công!')</script>";
-                include "../../View/back/CategoryBusiness.php";
+                include "../../View/back/CategoryBusiness/CategoryBusiness.php";
             }else{
                 echo "<script>alert('Thêm không thành công!')</script>";
-                include "../../View/back/AddCategoryBusiness.php";
+                include "../../View/back/CategoryBusiness/AddCategoryBusiness.php";
             }
             break;
         case "edit":
-            include '../../View/back/EditCategoryBusiness.php';
+            include '../../View/back/CategoryBusiness/EditCategoryBusiness.php';
             break;
         case "edit_action":
             if(isset($_GET['id'])){
@@ -45,10 +45,10 @@
                 if($check!==false){
                     uploadimage();
                     echo "<script>alert('Cập nhật thành công!')</script>";
-                    include "../../View/back/CategoryBusiness.php";
+                    include "../../View/back/CategoryBusiness/CategoryBusiness.php";
                 }else{
                     echo "<script>alert('Cập nhật không thành công!')</script>";
-                    include "../../View/back/EditCategoryBusiness.php";
+                    include "../../View/back/CategoryBusiness/EditCategoryBusiness.php";
                 }
             }
             break;
@@ -58,7 +58,7 @@
                 $categorybusiness=new CategoryBusiness();
                 $categorybusiness->delete($id);
                 echo "<script>alert('Xoá thành công!')</script>";
-                include "../../View/back/CategoryBusiness.php";
+                include "../../View/back/CategoryBusiness/CategoryBusiness.php";
             }
     }
 ?>

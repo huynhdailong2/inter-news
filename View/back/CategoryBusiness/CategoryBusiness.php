@@ -32,7 +32,6 @@
       <tr class="table-primary" align="center">
         <th>Id</th>
         <th>Image</th>
-        <th>test</th>
         <th>Name</th>
         <th>Description</th>
         <th>Phone</th>
