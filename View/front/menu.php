@@ -136,7 +136,7 @@
           </section>
         </li>
         <li class="menu-item menu-item-toxonomy menu-item-cate">
-          <a href="#" class="hasub menu_link a-ac">KẾ TOÁN-THUẾ</a>
+          <a href="tu-van-phap-luat-thue" class="hasub menu_link a-ac">KẾ TOÁN-THUẾ</a>
           <section id="menu_gioithieu" class="vnsm-elm vnsm-row hide-col">
             <div class="mngt-elm vnsm-list">
               <?php

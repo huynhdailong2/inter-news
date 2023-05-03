@@ -1,5 +1,5 @@
 <style>
-<?php include "Assets/front/css/home.css";
+<?php include "../../Assets/front/css/home.css";
 
 ?>* {
     box-sizing: border-box;

@@ -1,0 +1,89 @@
+<?php
+    class Category{
+        public function __Construct(){
+
+        }
+        //show tất cả danh mục
+        public function CategoryAll(){
+            $db=new Connect();
+            $sql="select * from category";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // show danh mục doanh nghiệp
+        public function showCategoryBusiness(){
+            $db=new Connect();
+            $sql="select * from category where note='doanhnghiep'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục sở hữu trí tuệ
+        public function showCategoryIntellectualProperty(){
+            $db=new Connect();
+            $sql="select * from category where note='sohuutritue'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục đầu tư
+        public function showCategoryInvest(){
+            $db=new Connect();
+            $sql="select * from category where note='dautu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục vụ việc vụ án
+        public function showCategoryVVVA(){
+            $db=new Connect();
+            $sql="select * from category where note='vuviec-vuan'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục giấy phép
+        public function showCategoryLicense(){
+            $db=new Connect();
+            $sql="select * from category where note='giayphep'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //lấy id của danh mục
+        public function CategoryId($id){
+            $db=new Connect();
+            $sql="select * from category where id=$id";
+            $result=$db->getInstance($sql);
+            return $result;
+        }
+        //thêm
+        public function insert($name,$description,$phone,$email,$image,$url,$note){
+            $db=new Connect();
+            $date=new DateTime('Asia/Ho_Chi_Minh');
+            $datecreate=$date->format('Y-m-d H:i:s');
+            $sql="insert into category(id,name,description,phone,email,image,url,note,created_at)
+            values (NULL,'$name','$description','$phone','$email','$image','$url','$note','$datecreate')";
+            $result=$db->exec($sql);
+            return $result;
+        }
+        //cập nhật
+        public function update($id,$name,$description,$phone,$email,$image,$url,$note){
+            $db=new Connect();
+            $date=new DateTime('Asia/Ho_Chi_Minh');
+            $dateupdate=$date->format('Y-m-d H:i:s');
+            $sql="update category set 
+            image='$image',
+            name='$name',
+            description='$description',
+            phone='$phone',
+            email='$email',
+            url='$url',
+            updated_at='$dateupdate' where id=$id";
+            $result=$db->exec($sql);
+            return $result;
+        }
+        //xoá
+        public function delete($id){
+            $db=new Connect();
+            $sql="delete from category where id=$id";
+            $result=$db->exec($sql);
+            return $result;
+        }
+    }
+?>

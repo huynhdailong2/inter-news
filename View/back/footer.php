@@ -37,6 +37,14 @@
     </span>
   </div>
 </div> -->
+<style>
+    i{
+    color: #ff9800;
+    font-size: 12px;
+    line-height: 12px;
+    margin-right: 5px;
+  }
+</style>
 <footer class="site-footer" >
         <div class="container">
             <div class="row">

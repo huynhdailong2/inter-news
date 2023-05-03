@@ -1,119 +1,11 @@
 <style>
-h3 {
-    font-weight: 400;
-}
-
-span.gioithieu-tv a {
-    margin-top: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ff6600;
-    text-align: center
-}
-
-span.gioithieu-tv {}
-
-.gioithieu-full {
-    position: relative;
-    padding-bottom: 20px;
-    margin-top: 20px;
-
-}
-
-.gioithieu-full::after {
-    margin-left: auto;
-    margin-right: auto;
-    content: "";
-    width: 280px;
-    height: 2px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #268c52, rgba(255, 255, 255, 0));
-    display: block;
-    clear: both;
-    margin-top: 5px;
-}
-
-.form-all {
-    display: flex;
-    flex-flow: wrap;
-    position: relative;
-    transition: all 500ms ease;
-}
-
-.form-name {
-    text-transform: uppercase;
-    width: 100%;
-    color: #00578a;
-    font-size: 18px;
-    font-weight: 600;
-    margin-top: 6px;
-    margin-bottom: 0px;
-}
-
-.form-in4 {
-    width: 100%;
-    font-size: 15px;
-    line-height: 22px;
-}
-
-p {
-    margin: 0 0 8px 0;
-    margin-bottom: 0px;
-}
-
-.p-title {
-    margin-bottom: 10px;
-}
-
-hr {
-    color: gray;
-}
-
-a.link {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    font-size: 0;
-    z-index: 55;
-    border: 0;
-    background: repeat;
-    outline: none;
-    cursor: pointer;
-}
-
-div.cate-related div.title a {
-    color: #00578a;
-    text-decoration: none;
-    font-size: 20px;
-    line-height: 26px;
-    font-weight: 600;
-}
-div.cate-related .desc{
-  margin-top: 5px;
-}
-div.cate-related .more{
-  font-size: 13px;
-  font-weight: 600;
-  margin-top: 5px;
-}
-div.cate-related .more a{
-  color:#268c52;
-  line-height: 13px;
-}
-div.cate-related{
-  border-bottom:1px dashed #dcdcdc;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-    align-items: center;
-}
-.relate{
-  width:100%;
-}
+    <?php
+        include "./Assets/front/css/style.css";
+    ?>
 </style>
 <?php
     $CategoryRelated=new CategoryRelated();
-    $result=$CategoryRelated->showCateRelate_Doanhnghiep();
+    $result=$CategoryRelated->showCateRelate_Business();
     $count=$result->rowCount();
     $limit=8;
     $p=new pagination();
@@ -151,8 +43,8 @@ div.cate-related{
     <!--Phần hiển thị thông tin database-->
     <div class="row">
         <?php
-          $CategoryBusiness=new CategoryBusiness();
-          $result=$CategoryBusiness->CategoryBusinessAll($start,$limit);
+          $Category=new Category();
+          $result=$Category->showCategoryBusiness();
           while($set=$result->fetch()):
         ?>
         <div class="col-lg-3 col-md-4 mb-3 text-left form-all">
@@ -184,7 +76,7 @@ div.cate-related{
     <div class="relate">
       <?php
         $CategoryRelated=new CategoryRelated();
-        $result=$CategoryRelated->Doanhnghiep_pagination($start,$limit);
+        $result=$CategoryRelated->Business_pagination($start,$limit);
         while($set=$result->fetch()):
       ?>
       <div class="cate-related">
@@ -212,7 +104,7 @@ div.cate-related{
                         padding: 8px 16px;
                         text-decoration: none;
                         transition: background-color .3s;
-                        border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=doanhnghiep&page='.($current_page-1).'">Prev</a></li>';
+                        border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep'.($current_page-1).'">Prev</a></li>';
                     }
                     for($i=1;$i<=$page;$i++)
                     {
@@ -222,7 +114,7 @@ div.cate-related{
                         padding: 8px 16px;
                         text-decoration: none;
                         transition: background-color .3s;
-                        border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=doanhnghiep&page=<?php echo $i;?>"><?php echo $i;?></a></li>
+                        border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep<?php echo $i;?>"><?php echo $i;?></a></li>
                     <?php
                         }
                         // nút next
@@ -232,7 +124,7 @@ div.cate-related{
                             padding: 8px 16px;
                             text-decoration: none;
                             transition: background-color .3s;
-                            border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=doanhnghiep&page='.($current_page+1).'">Next</a></li>';
+                            border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep'.($current_page+1).'">Next</a></li>';
                         }
                     ?>
         </ul>

@@ -10,21 +10,22 @@ div.title {
     <?php
     if(isset($_GET['id'])){
       $id=$_GET['id'];
-      $CategoryBusiness=new CategoryBusiness();
-      $result=$CategoryBusiness->CategoryBusinessId($id);
+      $Category=new Category();
+      $result=$Category->CategoryId($id);
       $id=$result['id'];
       $name=$result['name'];
       $description=$result['description'];
       $phone=$result['phone'];
       $email=$result['email'];
       $url=$result['url'];
+      $note=$result['note'];
       $image=$result['image'];
     }
   ?>
     <!--tạo thẻ form-->
 
-    <form action="index.php?action=CategoryBusinessController&act=insert_action" method="post" enctype="multipart/form-data">
-    <a style="margin-top:20px;margin-bottom:20px;" href="index.php?action=CategoryBusinessController&act=CategoryBusiness" type="button" class="btn btn-default">Back</a>
+    <form action="index.php?action=CategoryController&act=insert_action" method="post" enctype="multipart/form-data">
+    <a style="margin-top:20px;margin-bottom:20px;" href="index.php?action=CategoryController&act=Category" type="button" class="btn btn-default">Back</a>
     <table class="table" style="border: 0px;">
         <tr>
             <td>ID</td>
@@ -54,6 +55,11 @@ div.title {
         <tr>
             <td>URL</td>
             <td><input type="text" class="form-control" name="url" value="<?php if(isset($url)) echo $url;?>"
+                    maxlength="100px"></td>
+        </tr>
+        <tr>
+            <td>Note</td>
+            <td><input type="text" class="form-control" name="note" value="<?php if(isset($note)) echo $note;?>"
                     maxlength="100px"></td>
         </tr>
         <tr>

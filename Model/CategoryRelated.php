@@ -9,15 +9,74 @@
             $result=$db->getList($sql);
             return $result;
         }
-        public function showCateRelate_Doanhnghiep(){
+        //show danh mục doanh nghiệp
+        public function showCateRelate_Business(){
             $db=new Connect();
             $sql="select * from category_related where note='doanhnghiep'";
             $result=$db->getList($sql);
             return $result;
         }
-        public function Doanhnghiep_pagination($start,$limit){
+        //phân trang danh mục doanh nghiệp
+        public function Business_pagination($start,$limit){
             $db=new Connect();
             $sql="select * from category_related where note='doanhnghiep' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục sở hữu trí tuệ
+        public function showCateRelate_IntellectualProperty(){
+            $db=new Connect();
+            $sql="select * from category_related where note='sohuutritue'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // phân trang danh mục sở hữu trí tuệ
+        public function IntellectualProperty_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='sohuutritue' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục đầu tư
+        public function showCateRelate_Invest(){
+            $db=new Connect();
+            $sql="select * from category_related where note='dautu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // phân trang danh mục đầu tư
+        public function Invest_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='dautu' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục giấy phép
+        public function showCateRelate_License(){
+            $db=new Connect();
+            $sql="select * from category_related where note='giayphep'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // phân trang danh mục giấy phép
+        public function License_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='giayphep' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục giấy phép
+        public function showCateRelate_VVVA(){
+            $db=new Connect();
+            $sql="select * from category_related where note='vuviec-vuan'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // phân trang danh mục giấy phép
+        public function VVVA_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='vuviec-vuan' limit ".$start.",".$limit;
+           echo $sql;
             $result=$db->getList($sql);
             return $result;
         }

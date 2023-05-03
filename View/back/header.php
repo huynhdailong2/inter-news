@@ -35,8 +35,8 @@
                                 Information Manager
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="index.php?action=PositionController&act=positions">Position Manager</a>
-                                <a class="dropdown-item" href="index.php?action=StaffController&act=Staffs">Staff Manager</a>
+                                <a class="dropdown-item" title="Quản lý chức vụ" href="index.php?action=PositionController&act=positions">Position Manager</a>
+                                <a class="dropdown-item" title="Quản lý thành viên" href="index.php?action=StaffController&act=Staffs">Staff Manager</a>
                             </div>
                         </li>
                         <!--Quản lí danh mục-->
@@ -45,15 +45,17 @@
                                 Category Manager 
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="quan-ly-danh-muc-bai-viet">Category Post</a>
-                                <a class="dropdown-item" href="index.php?action=CategoryBusinessController&act=CategoryBusiness">Category Business</a>
-                                <a class="dropdown-item" href="index.php?action=CategoryRelatedController&act=CategoryRelated">Category Related</a>
+                                <a class="dropdown-item" title="Danh mục bài viết" href="quan-ly-danh-muc-bai-viet">Category Post</a>
+                                <a class="dropdown-item" title="Danh mục" href="index.php?action=CategoryController&act=Category">Category</a>
+                                <a class="dropdown-item" title="Danh mục liên quan" href="index.php?action=CategoryRelatedController&act=CategoryRelated">Category Related</a>
                             </div>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a style="color:#086637;" title="Hotline tư vấn" class="nav-link" href="index.php?action=HotlineController&act=Hotline">Hotline</a>
+                        </li>
                         <!--Đăng xuất-->
                         <li class="nav-item">
-                            <a class="nav-link" href="index.php?action=AdminController&act=logout">Đăng xuất</a>
+                            <a class="nav-link" title="Đăng xuất" href="index.php?action=AdminController&act=logout">Đăng xuất</a>
                         </li>
                         <?php
                             if(isset($_SESSION['email'])&& isset($_SESSION['password'])):

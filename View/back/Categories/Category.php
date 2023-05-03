@@ -5,6 +5,7 @@
   }
   div.title-2{
     margin-top: 20px;
+    margin-bottom: 20px;
   }
   th{
     text-align:center;
@@ -15,10 +16,13 @@
   line-height: 12px;
   margin-right: 5px;
 }
+.dropdown{
+  margin-left:20px;
+}
 </style>
-<div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>CATEGORY BUSINESS MANAGEMENT</b></h3></div>
+<div  class="col-md-12 col-12 col-md-offset-4 title"><h3 ><b>CATEGORY MANAGEMENT</b></h3></div>
 <div class="row col-12 title-2">
-<a href="index.php?action=CategoryBusinessController&act=insert"><h4>ADD CATEGORY BUSINESS</h4></a>
+<a href="index.php?action=CategoryController&act=insert"><h4>ADD CATEGORY</h4></a>
 </div>
 <!-- <div class="row col-12">
 <a href="index.php?action=hoadon"><h4>Xem hóa đơn</h4></a><br/>
@@ -37,13 +41,14 @@
         <th>Phone</th>
         <th>Email</th>
         <th>URL</th>
+        <th>Note</th>
         <th colspan="2">Actions</th>
       </tr>
     </thead>
     <tbody>
       <?php
-        $CategoryBusiness=new CategoryBusiness();
-        $result=$CategoryBusiness->CategoryBusinessAll();
+        $Category=new Category();
+        $result=$Category->CategoryAll();
         while($set=$result->fetch()):
       ?>
       <tr>
@@ -56,8 +61,9 @@
         <td><?php echo $set['phone'];?></td>
         <td><?php echo $set['email'];?></td>
         <td><?php echo $set['url'];?></td>
-        <td><a href="index.php?action=CategoryBusinessController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
-        <td><a href="index.php?action=CategoryBusinessController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
+        <td><?php echo $set['note'];?></td>
+        <td><a href="index.php?action=CategoryController&act=edit&id=<?php echo $set['id'];?>">Edit</a></td>
+        <td><a href="index.php?action=CategoryController&act=delete&id=<?php echo $set['id'];?>">Delete</a></td>
       </tr>
      <?php
       endwhile;

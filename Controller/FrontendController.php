@@ -22,6 +22,9 @@
         case 'vuviecvuan':
             include "./View/front/vuviec-vuan_trangchu.php";
             break;
+        case 'ketoan-thue':
+            include "./View/front/ketoan-thue.php";
+            break;
 
     }
 ?>

@@ -1,81 +1,18 @@
 <style>
-span.gioithieu-tv a {
-    margin-top: 20px;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #ff6600;
-    text-align: center;
-}
-
-.gioithieu-full {
-    position: relative;
-    padding-bottom: 20px;
-
-}
-
-.gioithieu-full::after {
-    margin-left: auto;
-    margin-right: auto;
-    content: "";
-    width: 280px;
-    height: 2px;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #268c52, rgba(255, 255, 255, 0));
-    display: block;
-    clear: both;
-    margin-top: 5px;
-}
-
-.form-all {
-    display: flex;
-    flex-flow: wrap;
-    position: relative;
-    transition: all 500ms ease;
-}
-
-.form-name {
-    text-transform: uppercase;
-    width: 100%;
-    color: #00578a;
-    font-size: 16px;
-    font-weight: 700;
-    margin-top: 6px;
-    margin-bottom: 0px;
-}
-
-.form-in4 {
-    width: 100%;
-    font-size: 15px;
-    line-height: 22px;
-}
-
-p {
-    margin: 0 0 8px 0;
-    margin-bottom: 0px;
-}
-
-.p-title {
-    margin-bottom: 10px;
-}
-
-hr {
-    color: gray;
-}
-a.a-for-link{
-  position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    font-size: 0;
-    z-index: 55;
-    border: 0;
-    background: repeat;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none;
-    transition: all 300ms ease;
-}
+    <?php
+        include "./Assets/front/css/style.css";
+    ?>
 </style>
+<?php
+    $CategoryRelated=new CategoryRelated();
+    $result=$CategoryRelated->showCateRelate_License();
+    $count=$result->rowCount();
+    $limit=8;
+    $p=new pagination();
+    $page=$p->findPage($count,$limit);
+    $start=$p->findStart($limit);
+    $current_page = isset($_GET['page'])?$_GET['page']:1;
+?>
 <hr>
 <div class="gioithieu" style="background: rgb(251, 255, 251);">
     <h3 style="color: green; text-align: center;">DỊCH VỤ XIN GIẤY PHÉP CON</h3>
@@ -98,39 +35,96 @@ a.a-for-link{
     <img style="padding-bottom:30px;" src="./Assets/front/images/Giay-phep-con_trangchu.jpg" style="width: 100%;">
     <div class="gioithieu-full" style="text-align:center;">
         <span class="gioithieu-tv">
-            <a class="a-title" href="">DỊCH VỤ GIẤY PHÉP KINH DOANH (GIẤY PHÉP CON)</a>
+            <a href="">DỊCH VỤ GIẤY PHÉP KINH DOANH (GIẤY PHÉP CON)</a>
         </span>
     </div>
     <!--Phần hiển thị thông tin database-->
     <div class="row">
         <?php
-          $gp=new licensefe();
-          $result=$gp->showlicense();
+          $Category=new Category();
+          $result=$Category->showCategoryLicense();
           while($set=$result->fetch()):
         ?>
         <div class="col-lg-3 col-md-4 mb-3 text-left form-all">
             <!--Thẻ hình ảnh-->
             <div class="view overlay z-depth-1-half">
                 <img width="380" height="280" style="max-width:100%"
-                    src="admin/Content/images/<?php echo $set['image']?>" alt="">
-                <noscript>
-                    <img width="380" height="280" style="max-width:100%"
-                        src="admin/Content/images/<?php echo $set['image']?>" alt="">
-                </noscript>
+                    src="./Assets/back/images/<?php echo $set['image']?>" alt="">
             </div>
             <!--Thẻ tên-->
-            <h5 class="font-weight-bold form-name"><?php echo $set['gp_name']?></h5>
+            <p class="font-weight-bold form-name"><?php echo $set['name']?></p>
             <div class="form-in4">
                 <p>
-                    <strong><?php echo $set['gp_disc']?></strong>
+                    <strong><?php echo $set['description']?></strong>
                 </p>
-                <p>Phone: <?php echo $set['gp_phone']?></p>
-                <p>Email: <?php echo $set['gp_email']?></p>
+                <p>Phone:<?php echo $set['phone']?></p>
+                <p>Email:<?php echo $set['email']?></p>
             </div>
-            <?php echo $set['link_details']?>
+            <a href="#" class="link" title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
         </div>
         <?php
           endwhile;
         ?>
+    </div>
+    <div class="gioithieu-full" style="text-align:center;">
+        <span class="gioithieu-tv">
+            <a href="">TIN TỨC LIÊN QUAN</a>
+        </span>
+    </div>
+    <div class="relate" style="text-align:left;">
+      <?php
+        $CategoryRelated=new CategoryRelated();
+        $result=$CategoryRelated->License_pagination($start,$limit);
+        while($set=$result->fetch()):
+      ?>
+      <div class="cate-related">
+          <div class="title">
+              <a href="<?php echo $set['url']?>" title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
+          </div>
+          <div class="desc">
+              <p><?php echo $set['description']?></p>
+          </div>
+          <div class="more">
+              <a href="<?php echo $set['url']?>" title="<?php echo $set['name']?>">Xem chi tiết</a>
+          </div>  
+      </div>
+      <?php
+        endwhile;
+      ?>
+    </div>
+    <div class="col-md-12 col-lg-12 col-sm-12 col-md-offset-3" style="margin-left:450px;">
+        <ul class="pagination">
+        <?php
+                    // nút lùi
+                    if($current_page > 1 && $page > 1){
+                        echo '<li style="color: black;
+                        float: left;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                        transition: background-color .3s;
+                        border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=dautu&page='.($current_page-1).'">Prev</a></li>';
+                    }
+                    for($i=1;$i<=$page;$i++)
+                    {
+                    ?>
+                    <li style="color: black;
+                        float: left;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                        transition: background-color .3s;
+                        border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=dautu&page=<?php echo $i;?>"><?php echo $i;?></a></li>
+                    <?php
+                        }
+                        // nút next
+                        if($current_page < $page && $page > 1){
+                            echo '<li style="color: black;
+                            float: left;
+                            padding: 8px 16px;
+                            text-decoration: none;
+                            transition: background-color .3s;
+                            border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=dautu&page='.($current_page+1).'">Next</a></li>';
+                        }
+                    ?>
+        </ul>
     </div>
 </div>
