@@ -204,7 +204,7 @@ a.link-center2{
                         thống về nghề luật, nghề dịch vụ đại diện sở hữu trí tuệ, nghề kế toán, dịch vụ thuế của những
                         luật sư sáng lập, các luật sư, các cộng sự của Luật Việt An…
                         <em>
-                          <a style="font-style:italic;" href="./View/gioithieu_trangchu.php">Chi tiết</a>
+                          <a style="font-style:italic;" href="./View/front/gioithieu_trangchu.php">Chi tiết</a>
                         </em>
                     </p>
                   
