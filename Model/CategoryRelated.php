@@ -65,18 +65,31 @@
             $result=$db->getList($sql);
             return $result;
         }
-        //show danh mục giấy phép
+        //show danh mục vụ việc vụ án
         public function showCateRelate_VVVA(){
             $db=new Connect();
             $sql="select * from category_related where note='vuviec-vuan'";
             $result=$db->getList($sql);
             return $result;
         }
-        // phân trang danh mục giấy phép
+        // phân trang danh mục vụ việc vụ án
         public function VVVA_pagination($start,$limit){
             $db=new Connect();
             $sql="select * from category_related where note='vuviec-vuan' limit ".$start.",".$limit;
-           echo $sql;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục vụ việc kế toán- thuế
+        public function showCateRelate_KTT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='ketoan-thue'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // phân trang danh mục kế toán- thuế
+        public function KTT_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='ketoan-thue' limit ".$start.",".$limit;
             $result=$db->getList($sql);
             return $result;
         }

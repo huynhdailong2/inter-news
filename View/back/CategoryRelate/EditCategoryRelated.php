@@ -54,8 +54,10 @@ div.title {
         </tr>
         <tr>
             <td>URL</td>
-            <td><input type="text" class="form-control" name="url"
-                    value="<?php if(isset($url)) echo $url;?>" maxlength="1000px"></td>
+            <td>
+                <textarea name="url" id="w3review" cols="50" rows="4"><?php if(isset($url)) echo $url;?>
+                </textarea>
+            </td>
         </tr>
         <tr>
             <td colspan="2">

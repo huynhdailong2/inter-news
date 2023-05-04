@@ -25,6 +25,12 @@
         case 'ketoan-thue':
             include "./View/front/ketoan-thue.php";
             break;
-
+            //danh muc trang con ( giới thiệu )
+        case 'gioithieu_thuonghieuluatvietan':
+            include "./View/front/danhmuc_gioithieu/gioithieu_thuonghieuluatvietan.php";
+            break;
+        case 'gioithieu_chinhsachbaomatthongtin':
+            include "./View/front/danhmuc_gioithieu/gioithieu_chinhsachbaomatthongtin.php";
+            break;
     }
 ?>

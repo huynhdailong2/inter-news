@@ -28,12 +28,14 @@ include "./Config/Connect.php";
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
     <script type="text/javascript" src="./Assets/front/js/menu.js"></script>
     <link rel="stylesheet" href="./Assets/front/css/header.css">
+    <link rel="shortcut icon" href="./Assets/front/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="./Assets/front/css/home.css">
-    <title>SanPham</title>
+    <title>BLUSZA</title>
 </head>
 <style>
     body {
         background-image: url('./Content/img/body-bg.jpg');
+        overflow-x:clip;    
     }
     .margin{
         margin-left: 90px;

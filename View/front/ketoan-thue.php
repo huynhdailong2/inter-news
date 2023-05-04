@@ -2,6 +2,16 @@
 <?php include "./Assets/front/css/style.css";
 ?>
 </style>
+<?php
+    $CategoryRelated=new CategoryRelated();
+    $result=$CategoryRelated->showCateRelate_KTT();
+    $count=$result->rowCount();
+    $limit=8;
+    $p=new pagination();
+    $page=$p->findPage($count,$limit);
+    $start=$p->findStart($limit);
+    $current_page = isset($_GET['page'])?$_GET['page']:1;
+?>
 <section>
     <div>
         <p class="title-first">Dịch vụ kế toán</p>
@@ -32,7 +42,7 @@
                     cơ quan Thuế.
                 </li>
             </ul>
-            <h4 class="div-left-h4">Nội dung công việc dịch vụ kế toán thuế trọn gói bao gồm</h4>
+            <h4 class="div-left-h4" id="Nội_dung_công_việc_dịch_vụ_kế_toán_thuế_trọn_gói_bao_gồm">Nội dung công việc dịch vụ kế toán thuế trọn gói bao gồm</h4>
             <ul class="div-left-ul">
                 <li>Tư vấn và hoàn thiện hệ thống sổ sách kế toán cho doanh nghiệp, tư vấn cách lưu giữ sổ sách, chứng
                     từ kế toán theo quy định của pháp luật hiện hành;
@@ -49,7 +59,7 @@
                     Đại diện cho doanh nghiệp làm việc và giải trình với cơ quan nhà nước.
                 </li>
             </ul>
-            <h4 class="div-left-h4">Công việc hàng tháng, quý</h4>
+            <h4 class="div-left-h4" id="Công_việc_hàng_tháng,_quý">Công việc hàng tháng, quý</h4>
             <ul class="div-left-ul">
                 <li>
                     Nhận hóa đơn chứng từ của doanh nghiệp, tư vấn tính hợp lý, hợp lệ, hợp pháp của chứng từ phát sinh;
@@ -71,7 +81,7 @@
                     Nộp thuế TNDN tạm tính.
                 </li>
             </ul>
-            <h4 class="div-left-h4">Công việc cuối năm</h4>
+            <h4 class="div-left-h4" id="Công_việc_cuối_năm">Công việc cuối năm</h4>
             <ul class="div-left-ul">
                 <li>
                     Lập và nộp báo cáo tài chính và quyết toán thuế thu nhập cá nhân, thuế thu nhập doanh nghiệp;
@@ -84,7 +94,7 @@
                 Quý doanh nghiệp có khó khăn trong việc kê khai, thực hiện thủ tục thuế vui lòng liên hệ Đại lý thuế
                 Việt An để được hỗ trợ dịch vụ kế toán thuế trọn gói nhanh chóng, chính xác nhất!
             </p>
-            <h3 class="div-left-h3">
+            <h3 class="div-left-h3" id="Tại_sao_bạn_nên_sử_dụng_dịch_đại_lý_thuế,_kế_toán_Luật_Việt_An?">
                 Tại sao bạn nên sử dụng dịch đại lý thuế, kế toán Luật Việt An?
             </h3>
             <div class="gioithieu-full" style="margin-right:800px; margin-top:10px;"></div>
@@ -94,7 +104,7 @@
                 thuế tuân thủ pháp luật thuế; giảm chi phí về thời gian, nguồn lực cho cả cơ quan thuế và người nộp thuế
                 thực thi pháp luật thuế.
             </p>
-            <h3 class="div-left-h3">
+            <h3 class="div-left-h3" id="Vậy_Đại_lý_thuế_là_gì?">
                 Vậy Đại lý thuế là gì?
             </h3>
             <p class="p-div-left" style="font-size:16px; font-weight:400">
@@ -102,7 +112,7 @@
                 các điều kiện để kinh doanh dịch vụ làm các thủ tục về thuế theo quy định tại Luật Quản lý thuế và những
                 quy định khác của pháp luật có liên quan.
             </p>
-            <h3 class="div-left-h3">
+            <h3 class="div-left-h3" id="Vậy_dịch_vụ_đại_lý_thuế_có_những_ưu_điểm_gì_?_Việc_sử_dụng_dịch_vụ_đại_lý_thuế_sẽ_mang_lại_những_hiệu_quả_thiết_thực_gì_cho_doanh_nghiệp?_">
                 Vậy dịch vụ đại lý thuế có những ưu điểm gì ? Việc sử dụng dịch vụ đại lý thuế sẽ mang lại những hiệu
                 quả thiết thực gì cho doanh nghiệp?
             </h3>
@@ -204,8 +214,8 @@
                 </p>
             </blockquote>
             <div class="gioithieu-full" style="text-align:center;">
-                <span class="gioithieu-tv">
-                    <a href="" style=" color:#f58634; font-weight:600;font-size:22px;line-height:30px;">CÁC BÀI VIẾT
+                <span class="gioithieu-tv" id="CÁC_BÀI_VIẾT_LIÊN_QUAN_DỊCH_VỤ_KẾ_TOÁN_THUẾ_">
+                    <a style=" color:#f58634; font-weight:600;font-size:22px;line-height:30px;">CÁC BÀI VIẾT
                         LIÊN QUAN DỊCH VỤ KẾ TOÁN THUẾ </a>
                 </span>
             </div>
@@ -215,7 +225,7 @@
             <div class="type-mucluc">Mục lục</div>
         </div>
 
-        <div class="div-right">
+        <div class="d-right">
             <div id="section_at" class="div-right-editor block">
                 <div id="divright-at" class="div-right-at">
                     <div class="bt-close">
@@ -228,48 +238,49 @@
                             <a href="#">DỊCH VỤ KẾ TOÁN THUẾ</a>
                             <ol>
                                 <li>
-                                    <a href="#">
+                                    <a href="#Nội_dung_công_việc_dịch_vụ_kế_toán_thuế_trọn_gói_bao_gồm">
                                         Nội dung công việc dịch vụ kế toán thuế trọn gói bao gồm
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">Công việc hàng tháng, quý</a>
+                                    <a href="#Công_việc_hàng_tháng,_quý">Công việc hàng tháng, quý</a>
                                 </li>
                                 <li>
-                                    <a href="#">Công việc cuối năm</a>
+                                    <a href="#Công_việc_cuối_năm">Công việc cuối năm</a>
                                 </li>
                             </ol>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#Tại_sao_bạn_nên_sử_dụng_dịch_đại_lý_thuế,_kế_toán_Luật_Việt_An?">
                                 Tại sao bạn nên sử dụng dịch đại lý thuế, kế toán Luật Việt An?
                             </a>
                             <ol>
                                 <li>
-                                    <a href="#">
+                                    <a href="#Vậy_Đại_lý_thuế_là_gì?">
                                         Vậy Đại lý thuế là gì?
                                     </a>
                                 </li>
                             </ol>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#Vậy_dịch_vụ_đại_lý_thuế_có_những_ưu_điểm_gì_?_Việc_sử_dụng_dịch_vụ_đại_lý_thuế_sẽ_mang_lại_những_hiệu_quả_thiết_thực_gì_cho_doanh_nghiệp?_">
                                 Vậy dịch vụ đại lý thuế có những ưu điểm gì ? Việc sử dụng dịch vụ đại lý thuế sẽ mang
                                 lại những hiệu quả thiết thực gì cho doanh nghiệp?
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#Vậy,_tại_sao_nên_sử_dụng_dịch_vụ_Đại_lý_thuế_Việt_An?">
                                 Vậy, tại sao nên sử dụng dịch vụ Đại lý thuế Việt An?
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#CÁC_BÀI_VIẾT_LIÊN_QUAN_DỊCH_VỤ_KẾ_TOÁN_THUẾ_">
                                 CÁC BÀI VIẾT LIÊN QUAN DỊCH VỤ KẾ TOÁN THUẾ
                             </a>
                         </li>
                     </ol>
                 </div>
+                
             </div>
             <div class="div-hotline">
                     <div class="div-title">
@@ -286,39 +297,97 @@
                             <div class="type-title-hl"><?php echo $set['name']?></div>
                             <span class="sub"><?php echo $set['phone']?></span>
                         </div>
-                        <a href="<?php echo $set['link']?>" class="link"><?php echo $set['name']?></a>
+                        <a href="<?php echo $set['link']?>" class="link"
+                            title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
                     </div>
                     <?php
                         endwhile;
                     ?>
-            </div>
+                </div>
         </div>
-        
     </div>
 </section>
+<!--danh mục bài mục liên quan-->
+<div class="relate">
+    <?php
+        $CategoryRelated=new CategoryRelated();
+        $result=$CategoryRelated->KTT_pagination($start,$limit);
+        while($set=$result->fetch()):
+      ?>
+    <div class="cate-related">
+        <div class="title">
+            <a href="<?php echo $set['url']?>" title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
+        </div>
+        <div class="desc">
+            <p><?php echo $set['description']?></p>
+        </div>
+        <div class="more">
+            <a href="<?php echo $set['url']?>" title="<?php echo $set['name']?>">Xem chi tiết</a>
+        </div>
+    </div>
+    <?php
+        endwhile;
+      ?>
+</div>
+<div class="col-md-12 col-lg-12 col-sm-12 col-md-offset-3" style="margin-left:450px;">
+    <ul class="pagination">
+        <?php
+                    // nút lùi
+                    if($current_page > 1 && $page > 1){
+                        echo '<li style="color: black;
+                        float: left;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                        transition: background-color .3s;
+                        border: 1px solid #ddd;"><a href="tu-van-phap-luat-thue-page'.($current_page-1).'">Prev</a></li>';
+                    }
+                    for($i=1;$i<=$page;$i++)
+                    {
+                    ?>
+        <li style="color: black;
+                        float: left;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                        transition: background-color .3s;
+                        border: 1px solid #ddd;"><a
+                href="tu-van-phap-luat-thue-page<?php echo $i;?>"><?php echo $i;?></a></li>
+        <?php
+                        }
+                        // nút next
+                        if($current_page < $page && $page > 1){
+                            echo '<li style="color: black;
+                            float: left;
+                            padding: 8px 16px;
+                            text-decoration: none;
+                            transition: background-color .3s;
+                            border: 1px solid #ddd;"><a href="tu-van-phap-luat-thue-page'.($current_page+1).'">Next</a></li>';
+                        }
+                    ?>
+    </ul>
+</div>
 <script>
-    
-    jQuery(document).ready(function ($) {
-            $("#at-item").toc({
-                content: "div.div-left",
-                headings: "h2,h3,h4,h5,h6"
-            });
-            $(".sh-at").click(function() {$("#at-item").toggle("slide");}); 
-            $(".sh-at").on("click", function(){
-                var second = $(this).data("show");
-                var start = $(this).data("hide");
-                if (second === $(this).text()) {
-                    $(this).text(start);
-                } else {
-                    $(this).text(second);
-                }
-            });
-        });
-        jQuery(document).on("click",".btn-mucluc",function(){
-            jQuery("#section_at").addClass("active");
-        });
-        jQuery(document).on("click",".bt-close",function(){
-            jQuery("#section_at").removeClass("active");
-        });
-        
+jQuery(document).ready(function($) {
+    $("#at-item").toc({
+        content: "div.div-left",
+        headings: "h2,h3,h4,h5,h6"
+    });
+    $(".sh-at").click(function() {
+        $("#at-item").toggle("slide");
+    });
+    $(".sh-at").on("click", function() {
+        var second = $(this).data("show");
+        var start = $(this).data("hide");
+        if (second === $(this).text()) {
+            $(this).text(start);
+        } else {
+            $(this).text(second);
+        }
+    });
+});
+jQuery(document).on("click", ".btn-mucluc", function() {
+    jQuery("#section_at").addClass("active");
+});
+jQuery(document).on("click", ".bt-close", function() {
+    jQuery("#section_at").removeClass("active");
+});
 </script>

@@ -138,7 +138,7 @@
                         padding: 8px 16px;
                         text-decoration: none;
                         transition: background-color .3s;
-                        border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=giayphep&page='.($current_page-1).'">Prev</a></li>';
+                        border: 1px solid #ddd;"><a href="tu-van-dau-tu-page'.($current_page-1).'">Prev</a></li>';
                     }
                     for($i=1;$i<=$page;$i++)
                     {
@@ -148,7 +148,7 @@
                         padding: 8px 16px;
                         text-decoration: none;
                         transition: background-color .3s;
-                        border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=giayphep&page=<?php echo $i;?>"><?php echo $i;?></a></li>
+                        border: 1px solid #ddd;"><a href="tu-van-dau-tu-page<?php echo $i;?>"><?php echo $i;?></a></li>
                     <?php
                         }
                         // nút next
@@ -158,7 +158,7 @@
                             padding: 8px 16px;
                             text-decoration: none;
                             transition: background-color .3s;
-                            border: 1px solid #ddd;"><a href="index.php?action=FrontendController&act=giayphep&page='.($current_page+1).'">Next</a></li>';
+                            border: 1px solid #ddd;"><a href="tu-van-dau-tu-page'.($current_page+1).'">Next</a></li>';
                         }
                     ?>
         </ul>

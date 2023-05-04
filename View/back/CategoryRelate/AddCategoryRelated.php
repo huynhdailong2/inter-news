@@ -31,13 +31,17 @@ div.title {
         </tr>
         <tr>
             <td>Name</td>
-            <td><input type="text" class="form-control" name="name"
-                    value="<?php if(isset($name)) echo $name;?>" maxlength="1000px"></td>
+            <td>
+            <textarea name="name" id="w3review" cols="50" rows="2"><?php if(isset($name)) echo $name;?>
+                </textarea>
+            </td>
         </tr>
         <tr>
             <td>Description</td>
-            <td><input type="text" class="form-control" name="description" value="<?php if(isset($description)) echo $description;?>"
-                    maxlength="1000px"></td>
+            <td>
+                <textarea name="description" id="w3review" cols="50" rows="4"><?php if(isset($description)) echo $description;?>
+                </textarea>
+            </td>
         </tr>
         <tr>
             <td>Note</td>
@@ -46,8 +50,10 @@ div.title {
         </tr>
         <tr>
             <td>URL</td>
-            <td><input type="text" class="form-control" name="url" value="<?php if(isset($url)) echo $url;?>"
-                    maxlength="100px"></td>
+            <td>
+                <textarea name="url" id="w3review" cols="50" rows="4"><?php if(isset($url)) echo $url;?>
+                </textarea>
+            </td>
         </tr>
         <tr>
             <td colspan="2">

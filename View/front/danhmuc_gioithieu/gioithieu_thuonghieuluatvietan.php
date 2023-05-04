@@ -1,9 +1,23 @@
-<div style=" margin-left: 90px; margin-right: 90px;">
-    <h1 style="color:#268c52; text-align: center; font-family: Open
-                Sans,Arial,sans-serif;">THƯƠNG HIỆU LUẬT VIỆT AN</h1>
+<style>
+    h1 {
+    color: #008543;
+    text-align: center;
+    font-family: "MyriadPro", "Arial", sans-serif;
+    font-size: 30px;
+    line-height: 36px;
+    }
+p{
+    font-family: "MyriadPro","Arial",sans-serif;
+}
+.div-img{
+    text-align:center;
+    margin: 10px 0 10px 0;
+}
+</style>
+<div>
+    <h1>Thương hiệu Luật Việt An</h1>
     <div style="font-family: Open Sans,Arial,sans-serif;">
         <p>
-            Thương hiệu Luật Việt An
             Công ty Luật Việt An và cũng là Tổ chức đại diện sở hữu trí
             tuệ Việt An được thành lập theo Giấy chứng nhận hoạt động số
             01010266/2007/TP/ĐKTP của Sở Tư pháp thành phố Hà Nội, Quyết
@@ -13,21 +27,23 @@
         </p>
         <p>
             Thương hiệu Luật Việt An đã được Cục sở hữu trí tuệ cấp Giấy
-            chứng nhận đăng ký nhãn hiệu số 129606 và số 137013, đăng ký
+            chứng nhận <a href="#" title=" đăng ký nhãn hiệu"> đăng ký nhãn hiệu</a> số 129606 và số 137013, đăng ký
             bảo hộ cho nhóm 45: Dịch vụ pháp lý, dịch vụ tư vấn pháp
             luật, dịch vụ tư vấn sở hữu trí tuệ, dịch vụ đại diện sở hữu
             trí tuệ.
         </p>
-        <div style="text-align: center;">
-            <img src="./Assets/front/images/NGUOI-THIET-KE-NHAN-HIEU.jpg" width="1100px">
-            <p>MR. THỨC NGƯỜI THIẾT KẾ THƯƠNG HIỆU VÀ ĐỒNG SÁNG LẬP CÔNG
-                TY LUẬT VIỆT AN</p>
+        <p>Logo nhận diện thương hiệu Luật Việt An tại các website và các phương tiện thông tin là:</p>
+        <div class="div-img">
+            <img src="./Assets/front/images/NGUOI-THIET-KE-NHAN-HIEU.jpg" width="1000px" height="293">
         </div>
-        <div style="text-align: center;">
-            <img src="./Assets/front/images/Cong-ty-luat-viet-an-1000.jpg" width="1100px">
-            <p>MS. HÀ THÀNH VIÊN SÁNG LẬP, GIÁM ĐỐC CÔNG TY VÀ CÁC CỘNG
-                SỰ – CÔNG TY LUẬT VIỆT AN</p>
+        <p style="text-align:center;">MR. THỨC NGƯỜI THIẾT KẾ THƯƠNG HIỆU VÀ ĐỒNG SÁNG LẬP CÔNG TY LUẬT VIỆT AN</p>
+        <div class="div-img">
+            <img src="./Assets/front/images/Cong-ty-luat-viet-an-1000.jpg" width="1000px" height="250">
         </div>
+        <p style="text-align:center;">MS. HÀ THÀNH VIÊN SÁNG LẬP, GIÁM ĐỐC CÔNG TY VÀ CÁC CỘNG SỰ – CÔNG TY LUẬT VIỆT AN</p>
+        <p style="text-align:center;margin-top:15px;">
+            <strong>CÔNG TY LUẬT VIỆT AN</strong>
+        </p>
         <p>
             Hiện nay, trên thị trường chúng tôi phát hiện rất nhiều đơn
             vị đã lợi dụng uy tín và danh tiếng của Luật Việt An làm cho
@@ -47,19 +63,18 @@
         <ol>
             <li>
                 Website: tuvanvietan.com, luatvietan.com.vn là
-                website của Công ty TNHH Tư vấn Đầu Tư Và Dịch Vụ
+                website của <a href="#" title="Công ty TNHH">Công ty TNHH</a> Tư vấn Đầu Tư Và Dịch Vụ
                 Việt An – Công ty này không có chức năng tư vấn pháp
                 luật và không có chức năng hành nghề luật sư, hành
                 nghề đại diện sở hữu trí tuệ như công ty Luật Việt
-                An tại website: www.luatvietan.vn.
+                An tại website: <a href="trangchu"> www.luatvietan.vn.</a>
             </li>
             <li>
                 Website: luatanviet.com là website của Công ty TNHH
                 Tư vấn Đầu Tư An Việt – Công ty này cũng không có
                 chức năng tư vấn pháp luật và không có chức năng
                 hành nghề luật sư, hành nghề đại diện sở hữu trí tuệ
-                như công ty Luật Việt An tại website:
-                www.luatvietan.vn.
+                như công ty Luật Việt An tại website: <a href="trangchu"> www.luatvietan.vn.</a>
             </li>
         </ol>
         </p>

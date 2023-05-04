@@ -62,7 +62,7 @@
                 <p>Phone:<?php echo $set['phone']?></p>
                 <p>Email:<?php echo $set['email']?></p>
             </div>
-            <a href="#" class="link" title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
+            <a href="<?php echo $set['url']?>" class="link" title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
         </div>
         <?php
           endwhile;
@@ -104,7 +104,7 @@
                         padding: 8px 16px;
                         text-decoration: none;
                         transition: background-color .3s;
-                        border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep'.($current_page-1).'">Prev</a></li>';
+                        border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep-page'.($current_page-1).'">Prev</a></li>';
                     }
                     for($i=1;$i<=$page;$i++)
                     {
@@ -114,7 +114,7 @@
                         padding: 8px 16px;
                         text-decoration: none;
                         transition: background-color .3s;
-                        border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep<?php echo $i;?>"><?php echo $i;?></a></li>
+                        border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep-page<?php echo $i;?>"><?php echo $i;?></a></li>
                     <?php
                         }
                         // nút next
@@ -124,7 +124,7 @@
                             padding: 8px 16px;
                             text-decoration: none;
                             transition: background-color .3s;
-                            border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep'.($current_page+1).'">Next</a></li>';
+                            border: 1px solid #ddd;"><a href="tu-van-doanh-nghiep-page'.($current_page+1).'">Next</a></li>';
                         }
                     ?>
         </ul>
