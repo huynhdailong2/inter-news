@@ -1,29 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
-            rel="stylesheet">
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <title>Document</title>
-        <link rel="stylesheet" href="./Assets/front/css/style.css">
-    </head>
-    <style>
-            .type{
-                width: 100%;
-                color: #ffffff;
-                font-size: 12px;
-                line-height: 12px;
-                font-weight: 600;
-                text-align: center;
-            }
-        </style>
-    <body>
-        <section>
+<section>
             <div>
                 <p class="title-first">ĐĂNG KÍ SÁNG CHẾ</p>
             </div>
@@ -545,8 +520,8 @@
                     <i class="icon fa-bars"></i>
                     <div class="type">Mục lục</div>
                 </div>
-                <div class="kc-elm kc-css-871539 lva_editor">
-                    <div class="kc-elm lva_tags">
+                <div class="">
+                    <div class="">
                         <span class="tags_title">Tags:</span>
                         <a
                             href="https://luatvietan.vn/tags/bao-ho-sang-che"
@@ -576,33 +551,33 @@
                 </div>
                 <div class="lva_archive">
                     <div class="item_1 odd">
-                        <div class="kc-elm title"><a
+                        <div class="title"><a
                                 href="https://luatvietan.vn/giay-phep-lao-dong-tu-van-giay-phep"
                                 title="Giấy phép lao động">Giấy phép lao động</a></div>
                     </div>
                     <div class="item_2 even">
-                        <div class="kc-elm title"><a
+                        <div class="title"><a
                                 href="https://luatvietan.vn/bang-phan-loai-sang-che-quoc-te-ipc.html"
                                 title="Bảng Phân loại sáng chế quốc tế IPC">Bảng
                                 Phân loại sáng chế quốc tế IPC</a></div> </div>
                     <div class="item_3 odd">
-                        <div class="kc-elm title"><a
+                        <div class="title"><a
                                 href="https://luatvietan.vn/dieu-kien-thanh-lap-cong-ty-dich-vu-dai-dien-so-huu-tri-tue.html"
                                 title="Điều kiện thành lập công ty dịch vụ đại
                                 diện sở hữu trí tuệ">Điều kiện thành lập công ty
                                 dịch vụ đại diện sở hữu trí tuệ</a></div> </div>
                     <div class="item_4 even">
-                        <div class="kc-elm title"><a
+                        <div class="title"><a
                                 href="https://luatvietan.vn/ho-so-dang-ky-nhan-hieu.html"
                                 title="Hồ sơ đăng ký nhãn hiệu">Hồ sơ đăng ký
                                 nhãn hiệu</a></div> </div>
                     <div class="item_5 odd">
-                        <div class="kc-elm title"><a
+                        <div class="title"><a
                                 href="https://luatvietan.vn/tu-van-lap-du-an-dau-tu.html"
                                 title="Tư vấn lập dự án đầu tư">Tư vấn lập dự án
                                 đầu tư</a></div> </div>
                     <div class="item_6 even">
-                        <div class="kc-elm title"><a
+                        <div class="title"><a
                                 href="https://luatvietan.vn/tra-cuu-thong-tin-sang-che.html"
                                 title="Tra cứu thông tin sáng chế">Tra cứu thông
                                 tin sáng chế</a>
@@ -610,5 +585,3 @@
                     </div>
                 </div>
             </section>
-        </body>
-    </html>
