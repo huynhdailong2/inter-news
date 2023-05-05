@@ -4,19 +4,20 @@ RewriteRule ^trangchu$ index.php?action=HomeFrontController
 RewriteRule ^([A-Za-z]+)$ index.php?action=FrontendController&act=$1
 
 RewriteRule ^luat-viet-an$ index.php?action=FrontendController&act=gioithieu
-RewriteRule ^chinh-sach-bao-mat-thong-tin$ index.php?action=FrontendController&act=gioithieu_chinhsachbaomatthongtin
-RewriteRule ^thuong-hieu-luat-viet-an$ index.php?action=FrontendController&act=gioithieu_thuonghieuluatvietan
-
-
-
 RewriteRule ^so-huu-tri-tue$ index.php?action=FrontendController&act=sohuutritue
 RewriteRule ^tu-van-doanh-nghiep$ index.php?action=FrontendController&act=doanhnghiep
+
+RewriteRule ^chinh-sach-bao-mat-thong-tin$ index.php?action=FrontendController&act=gioithieu_chinhsachbaomatthongtin
+RewriteRule ^thuong-hieu-luat-viet-an$ index.php?action=FrontendController&act=gioithieu_thuonghieuluatvietan
+RewriteRule ^tu-van-thanh-lap-cong-ty-doanh-nghiep$ index.php?action=FrontendController&act=doanhnghiep_thanhlapcongtydoanhnghiep
+
 
 RewriteRule ^tu-van-doanh-nghiep-page([0-9]+)$ index.php?action=FrontendController&act=doanhnghiep&page=$1
 RewriteRule ^so-huu-tri-tue-page([0-9]+)$ index.php?action=FrontendController&act=sohuutritue&page=$1
 RewriteRule ^tu-van-dau-tu-page([0-9]+)$ index.php?action=FrontendController&act=dautu&page=$1
 RewriteRule ^tu-van-giay-phep-page([0-9]+)$ index.php?action=FrontendController&act=giayphep&page=$1
 RewriteRule ^tu-van-phap-luat-thue-page([0-9]+)$ index.php?action=FrontendController&act=ketoan-thue&page=$1
+RewriteRule ^tu-van-thanh-lap-cong-ty-doanh-nghiep-page([0-9]+)$ index.php?action=FrontendController&act=doanhnghiep_thanhlapcongtydoanhnghiep&page=$1
 
 
 RewriteRule ^tu-van-dau-tu$ index.php?action=FrontendController&act=dautu

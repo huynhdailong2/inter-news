@@ -17,7 +17,6 @@ span.gioithieu-tv a {
     margin-top: 20px;
 
 }
-
 .gioithieu-full::after {
     margin-left: auto;
     margin-right: auto;
@@ -29,7 +28,22 @@ span.gioithieu-tv a {
     clear: both;
     margin-top: 5px;
 }
-
+.gioithieu-full-2{
+    position: relative;
+    /* padding-bottom: 10px; */
+    margin-top: 20px;
+}
+.gioithieu-full-2::after{
+    margin-left: auto;
+    margin-right: auto;
+    content: "";
+    width: 280px;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #268c52, rgba(255, 255, 255, 0));
+    display: block;
+    clear: both;
+    margin-top: 5px;
+}
 .form-all {
     display: flex;
     flex-flow: wrap;
@@ -143,6 +157,10 @@ div.cate-related{
     font-weight:400;
     font-size: 15px;
 }
+.div-left-ul2{
+    font-weight:400;
+    font-size: 15px;
+}
 .div-left-h4{
     font-size: 18px;
     line-height: 24px;
@@ -218,9 +236,13 @@ div{
     font-weight: 600;
     text-align: center;
 }
-div.d-right{
-    position:-webkit-sticky;
+.sticky-div{
+    position: -webkit-sticky;
     position:sticky;
+    top:0
+}
+div.d-right{
+   
     top:80px;
     width:24%;
     min-height: 1px;
@@ -355,4 +377,19 @@ script{
     font-size: 14px;
     line-height: 14px;
     margin-top: 5px;
+}
+table{
+    float: left;
+    border-collapse: collapse;
+    overflow: hidden;
+    overflow-x: auto;
+    margin-bottom: 15px;
+}
+table td{
+    vertical-align: top;
+    border: 1px solid #999;
+    padding: 8px 3px 8px 3px;
+}
+strong{
+    font-weight:600;
 }

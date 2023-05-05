@@ -67,7 +67,7 @@
               <div class="item item-1 current">
               <i class="<?php echo $set['icon']?>"></i>
                 <div class="title"><?php echo $set['name']?></div>
-                <a href="#" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
+                <a href="<?php echo $set['slug']?>" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
               </div>
               <?php
               endwhile;
@@ -87,7 +87,7 @@
               <div class="item item-1 current">
                 <i class="<?php echo $set['icon']?>"></i>
                 <div class="title"><?php echo $set['name']?></div>
-                <a href="#" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
+                <a href="<?php echo $set['slug']?>" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
               </div>
               <?php
               endwhile;
@@ -127,7 +127,7 @@
               <div class="item item-1 current">
                 <i class="<?php echo $set['icon']?>"></i>
                 <div class="title"><?php echo $set['name']?></div>
-                <a href="#" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
+                <a href="<?php echo $set['slug']?>" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
               </div>
               <?php
               endwhile;
@@ -147,7 +147,7 @@
               <div class="item item-1 current">
                 <i class="<?php echo $set['icon']?>"></i>
                 <div class="title"><?php echo $set['name']?></div>
-                <a href="#" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
+                <a href="<?php echo $set['slug']?>" title="<?php echo $set['title']?>" class="link"><?php echo $set['title']?></a>
               </div>
               <?php
               endwhile;

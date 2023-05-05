@@ -27,10 +27,14 @@
             break;
             //danh muc trang con ( giới thiệu )
         case 'gioithieu_thuonghieuluatvietan':
-            include "./View/front/danhmuc_gioithieu/gioithieu_thuonghieuluatvietan.php";
+            include "./View/front/danhmuc_gioithieu/thuonghieuluatvietan.php";
             break;
         case 'gioithieu_chinhsachbaomatthongtin':
-            include "./View/front/danhmuc_gioithieu/gioithieu_chinhsachbaomatthongtin.php";
+            include "./View/front/danhmuc_gioithieu/chinhsachbaomatthongtin.php";
+            break;
+            //danh muc trang con ( doanh nghiep )
+        case 'doanhnghiep_thanhlapcongtydoanhnghiep':
+            include "./View/front/danhmuc_doanhnghiep/thanhlapcongty_doanhnghiep.php";
             break;
     }
 ?>

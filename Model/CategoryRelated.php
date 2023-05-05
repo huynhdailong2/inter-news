@@ -9,6 +9,12 @@
             $result=$db->getList($sql);
             return $result;
         }
+        public function CategoryRelatedAll_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
         //show danh mục doanh nghiệp
         public function showCateRelate_Business(){
             $db=new Connect();
@@ -90,6 +96,20 @@
         public function KTT_pagination($start,$limit){
             $db=new Connect();
             $sql="select * from category_related where note='ketoan-thue' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục vụ việc kế toán- thuế
+        public function showCateRelate_TLCTDN(){
+            $db=new Connect();
+            $sql="select * from category_related where note='thanhlapcongtydoanhnghiep'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // phân trang danh mục kế toán- thuế
+        public function TLCTDN_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='thanhlapcongtydoanhnghiep' limit ".$start.",".$limit;
             $result=$db->getList($sql);
             return $result;
         }

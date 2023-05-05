@@ -225,85 +225,87 @@
             <div class="type-mucluc">Mục lục</div>
         </div>
 
-        <div class="d-right">
-            <div id="section_at" class="div-right-editor block">
-                <div id="divright-at" class="div-right-at">
-                    <div class="bt-close">
-                        <i class="fa-times"></i>
-                    </div>
-                    <div class="div-right-title">Mục lục</div>
-                    <div class="sh-at" data-show="Hiện" data-hide="Ẩn">Ẩn</div>
-                    <ol id="at-item" type="I">
-                        <li>
-                            <a href="#">DỊCH VỤ KẾ TOÁN THUẾ</a>
-                            <ol>
-                                <li>
-                                    <a href="#Nội_dung_công_việc_dịch_vụ_kế_toán_thuế_trọn_gói_bao_gồm">
-                                        Nội dung công việc dịch vụ kế toán thuế trọn gói bao gồm
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#Công_việc_hàng_tháng,_quý">Công việc hàng tháng, quý</a>
-                                </li>
-                                <li>
-                                    <a href="#Công_việc_cuối_năm">Công việc cuối năm</a>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <a href="#Tại_sao_bạn_nên_sử_dụng_dịch_đại_lý_thuế,_kế_toán_Luật_Việt_An?">
-                                Tại sao bạn nên sử dụng dịch đại lý thuế, kế toán Luật Việt An?
-                            </a>
-                            <ol>
-                                <li>
-                                    <a href="#Vậy_Đại_lý_thuế_là_gì?">
-                                        Vậy Đại lý thuế là gì?
-                                    </a>
-                                </li>
-                            </ol>
-                        </li>
-                        <li>
-                            <a href="#Vậy_dịch_vụ_đại_lý_thuế_có_những_ưu_điểm_gì_?_Việc_sử_dụng_dịch_vụ_đại_lý_thuế_sẽ_mang_lại_những_hiệu_quả_thiết_thực_gì_cho_doanh_nghiệp?_">
-                                Vậy dịch vụ đại lý thuế có những ưu điểm gì ? Việc sử dụng dịch vụ đại lý thuế sẽ mang
-                                lại những hiệu quả thiết thực gì cho doanh nghiệp?
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#Vậy,_tại_sao_nên_sử_dụng_dịch_vụ_Đại_lý_thuế_Việt_An?">
-                                Vậy, tại sao nên sử dụng dịch vụ Đại lý thuế Việt An?
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#CÁC_BÀI_VIẾT_LIÊN_QUAN_DỊCH_VỤ_KẾ_TOÁN_THUẾ_">
-                                CÁC BÀI VIẾT LIÊN QUAN DỊCH VỤ KẾ TOÁN THUẾ
-                            </a>
-                        </li>
-                    </ol>
-                </div>
-                
-            </div>
-            <div class="div-hotline">
-                    <div class="div-title">
-                        <h3 class="type-title">Luật sư chuyên trách</h3>
-                    </div>
-                    <?php
-                        $Hotline=new Hotline();
-                        $result=$Hotline->HotlineAll();
-                        while($set=$result->fetch()):
-                    ?>
-                    <div class="div-title-hotline">
-                        <i class="<?php echo $set['icon']?>"></i>
-                        <div class="col">
-                            <div class="type-title-hl"><?php echo $set['name']?></div>
-                            <span class="sub"><?php echo $set['phone']?></span>
+        <div class="sticky-div">
+            <div class="d-right">
+                <div id="section_at" class="div-right-editor block">
+                    <div id="divright-at" class="div-right-at">
+                        <div class="bt-close">
+                            <i class="fa-times"></i>
                         </div>
-                        <a href="<?php echo $set['link']?>" class="link"
-                            title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
+                        <div class="div-right-title">Mục lục</div>
+                        <div class="sh-at" data-show="Hiện" data-hide="Ẩn">Ẩn</div>
+                        <ol id="at-item" type="I">
+                            <li>
+                                <a href="#">DỊCH VỤ KẾ TOÁN THUẾ</a>
+                                <ol>
+                                    <li>
+                                        <a href="#Nội_dung_công_việc_dịch_vụ_kế_toán_thuế_trọn_gói_bao_gồm">
+                                            Nội dung công việc dịch vụ kế toán thuế trọn gói bao gồm
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#Công_việc_hàng_tháng,_quý">Công việc hàng tháng, quý</a>
+                                    </li>
+                                    <li>
+                                        <a href="#Công_việc_cuối_năm">Công việc cuối năm</a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a href="#Tại_sao_bạn_nên_sử_dụng_dịch_đại_lý_thuế,_kế_toán_Luật_Việt_An?">
+                                    Tại sao bạn nên sử dụng dịch đại lý thuế, kế toán Luật Việt An?
+                                </a>
+                                <ol>
+                                    <li>
+                                        <a href="#Vậy_Đại_lý_thuế_là_gì?">
+                                            Vậy Đại lý thuế là gì?
+                                        </a>
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                <a href="#Vậy_dịch_vụ_đại_lý_thuế_có_những_ưu_điểm_gì_?_Việc_sử_dụng_dịch_vụ_đại_lý_thuế_sẽ_mang_lại_những_hiệu_quả_thiết_thực_gì_cho_doanh_nghiệp?_">
+                                    Vậy dịch vụ đại lý thuế có những ưu điểm gì ? Việc sử dụng dịch vụ đại lý thuế sẽ mang
+                                    lại những hiệu quả thiết thực gì cho doanh nghiệp?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#Vậy,_tại_sao_nên_sử_dụng_dịch_vụ_Đại_lý_thuế_Việt_An?">
+                                    Vậy, tại sao nên sử dụng dịch vụ Đại lý thuế Việt An?
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#CÁC_BÀI_VIẾT_LIÊN_QUAN_DỊCH_VỤ_KẾ_TOÁN_THUẾ_">
+                                    CÁC BÀI VIẾT LIÊN QUAN DỊCH VỤ KẾ TOÁN THUẾ
+                                </a>
+                            </li>
+                        </ol>
                     </div>
-                    <?php
-                        endwhile;
-                    ?>
+                    
                 </div>
+                <div class="div-hotline">
+                        <div class="div-title">
+                            <h3 class="type-title">Luật sư chuyên trách</h3>
+                        </div>
+                        <?php
+                            $Hotline=new Hotline();
+                            $result=$Hotline->HotlineAll();
+                            while($set=$result->fetch()):
+                        ?>
+                        <div class="div-title-hotline">
+                            <i class="<?php echo $set['icon']?>"></i>
+                            <div class="col">
+                                <div class="type-title-hl"><?php echo $set['name']?></div>
+                                <span class="sub"><?php echo $set['phone']?></span>
+                            </div>
+                            <a href="<?php echo $set['link']?>" class="link"
+                                title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
+                        </div>
+                        <?php
+                            endwhile;
+                        ?>
+                    </div>
+            </div>
         </div>
     </div>
 </section>
