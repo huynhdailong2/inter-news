@@ -95,6 +95,7 @@ form{
 }
 .hide-col {
   display: flex;
+  
 }
 .head-menu .header-content {
   background: #ffffff;
@@ -114,7 +115,7 @@ form{
 }
 .header_content .logo img {
   transition: all 365ms ease;
-  width: auto
+  width: auto;
 }
 
 
@@ -338,6 +339,10 @@ body .header-content.fixed .logo-img img {
   transform: translatex(-50%);
   z-index: 999;
   box-shadow: 0 5px 5px 0 rgba(0,0,0,.25);
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+  padding-left: 15px;
 
 }
 /*end menu header*/

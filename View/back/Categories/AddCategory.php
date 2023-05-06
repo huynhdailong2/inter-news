@@ -4,7 +4,7 @@ div.title {
 }
 </style>    
 
-<div class="col-md-12 col-12 col-md-offset-4 title"><h3><b>ADD CATEGORY BUSINESS</b></h3></div>
+<div class="col-md-12 col-12 col-md-offset-4 title"><h3><b>ADD CATEGORY</b></h3></div>
 
 <div class="row col-md-12 col-md-offset-4">
     <?php

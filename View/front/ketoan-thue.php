@@ -1,6 +1,17 @@
 <style>
-<?php include "./Assets/front/css/style.css";
-?>
+    <?php 
+        include "./Assets/front/css/style.css";
+    ?>
+ .call-green{
+    color: #086637;
+    font-size: 16px;
+    line-height: 16px;
+}
+.call-orange{
+    color: #f0a83c;
+    font-size: 16px;
+    line-height: 16px;
+}
 </style>
 <?php
     $CategoryRelated=new CategoryRelated();
@@ -283,7 +294,7 @@
                     </div>
                     
                 </div>
-                <div class="div-hotline">
+                    <div class="div-hotline">
                         <div class="div-title">
                             <h3 class="type-title">Luật sư chuyên trách</h3>
                         </div>

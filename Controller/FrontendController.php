@@ -32,6 +32,15 @@
         case 'gioithieu_chinhsachbaomatthongtin':
             include "./View/front/danhmuc_gioithieu/chinhsachbaomatthongtin.php";
             break;
+        case 'gioithieu_congtyluattaivietnam':
+            include "./View/front/danhmuc_gioithieu/congtyluattaivietnam.php";
+            break;
+        case 'gioithieu_danhgiacuacoquanquanly':
+            include "./View/front/danhmuc_gioithieu/danhgiacuacoquanquanly.php";
+            break;
+        case 'gioithieu_tuyendung':
+            include "./View/front/danhmuc_gioithieu/tuyendung.php";
+            break;
             //danh muc trang con ( doanh nghiep )
         case 'doanhnghiep_thanhlapcongtydoanhnghiep':
             include "./View/front/danhmuc_doanhnghiep/thanhlapcongty_doanhnghiep.php";

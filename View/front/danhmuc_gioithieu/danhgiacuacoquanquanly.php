@@ -1,5 +1,8 @@
 <style>
-    h1 {
+    <?php
+        include "./Assets/front/css/style.css";
+    ?>
+    h1.h1-dgcq{
         font-size: 26px;
         line-height: 32px;
         font-weight: 500;
@@ -12,7 +15,7 @@
         text-align: center;
     }
 
-    p {
+    p.p-dgcq {
         display: block;
         margin-block-start: 1em;
         margin-block-end: 1em;
@@ -20,7 +23,7 @@
         margin-inline-end: 0px;
     }
 
-    img {
+    img.img-dgcq{
         margin: auto;
         display: block;
         clear: both;
@@ -30,13 +33,12 @@
         width: 650px;
         aspect-ratio: auto 650 / 512;
         height: 512px;
-        overflow-clip-margin: content-box;
         overflow: clip;
     }
 </style>
 <div>
-    <h1>Đánh giá của cơ quan quản lí</h1>
-    <p>
+    <h1 class="h1-dgcq">Đánh giá của cơ quan quản lí</h1>
+    <p class="p-dgcq">
         Công ty Luật Việt An với phương châm hoạt động “Tìm đến Luật
         Việt An, Tìm đến câu trả lời”. Chúng tôi đã luôn nỗ lực để không
         những nhận được sự tin cậy, đánh giá cao về chất lượng dịch vụ
@@ -47,7 +49,7 @@
         Hà Nội và Sở Tư pháp Hà Nội.
     </p>
     <div>
-        <img src="./Assets/front/images/bk-lva.jpg">
-        <img src="./Assets/front/images/bk-luatsu.jpg">
+        <img class="img-dgcq" src="./Assets/front/images/bk-lva.jpg">
+        <img class="img-dgcq" src="./Assets/front/images/bk-luatsu.jpg">
     </div>
 </div>

@@ -45,6 +45,13 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show danh mục công ty tại việt nam
+        public function showCategoryCTTVN(){
+            $db=new Connect();
+            $sql="select * from category where note='congtytaivietnam'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         //lấy id của danh mục
         public function CategoryId($id){
             $db=new Connect();
@@ -68,12 +75,13 @@
             $date=new DateTime('Asia/Ho_Chi_Minh');
             $dateupdate=$date->format('Y-m-d H:i:s');
             $sql="update category set 
-            image='$image',
             name='$name',
             description='$description',
             phone='$phone',
             email='$email',
+            image='$image',
             url='$url',
+            note='$note',
             updated_at='$dateupdate' where id=$id";
             $result=$db->exec($sql);
             return $result;

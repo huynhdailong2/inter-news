@@ -153,7 +153,7 @@ a.link-center2{
 </style>
 <section>
     <!-- Carousel -->
-    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+    <div id="demo" class="carousel slide" data-bs-ride="carousel" style="margin-right:15px;">
         <!-- The slideshow/carousel -->
         <div class="carousel-inner">
             <div class="carousel-item active">

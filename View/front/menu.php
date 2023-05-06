@@ -19,7 +19,7 @@
 
 }
 </style>
-<section id="main_header" class="head-menu  hide-col" >
+<section id="main_header" class="head-menu  hide-col">
   <div class="menu-container-row head-col header-content">
     <div class="menu-head-logo logo-img">
       <div class="thumb">

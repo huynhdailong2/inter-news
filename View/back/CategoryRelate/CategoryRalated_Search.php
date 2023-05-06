@@ -97,16 +97,6 @@ i {
     }
 }
 </style>
-<?php
-    $CategoryRelated=new CategoryRelated();
-    $result=$CategoryRelated->CategoryRelatedAll();
-    $count=$result->rowCount();
-    $limit=20;
-    $p=new pagination();
-    $page=$p->findPage($count,$limit);
-    $start=$p->findStart($limit);
-    $current_page = isset($_GET['page'])?$_GET['page']:1;
-?>
 <div class="col-md-12 col-12 col-md-offset-4 title">
     <h3><b>CATEGORIES RELATED</b></h3>
 </div>
@@ -118,8 +108,8 @@ i {
     </div>
     <div class="col-7">
         <form action="index.php?action=CategoryRelatedController&act=search" method="POST">
-            <input type="text" placeholder="Search.."  name="search">
-            <input  type="submit" value="Search">
+            <input name="search" type="text" placeholder="Search">
+            <input  type="submit"  value="Search">
         </form>
     </div>
 </div>
@@ -155,11 +145,13 @@ i {
             <div id="main">
                 <button class="openbtn" onclick="openNav()">&#9776; Open Sidebar</button>
             </div>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="all" role="tabpanel" aria-labelledby="v-pills-home-tab">
                     <?php
                       $CategoryRelated=new CategoryRelated();
-                      $result=$CategoryRelated->CategoryRelatedAll_pagination($start,$limit);
+                        if(isset($_POST['search']))
+                        {
+                            $timkiem=$_POST['search'];
+                            $result=$CategoryRelated->getsearch($timkiem);
+                        }
                       while($set=$result->fetch()):
                     ?>
                     <tr>
@@ -178,47 +170,8 @@ i {
                     <?php
                       endwhile;
                     ?>
-                </div>
-            </div>
         </tbody>
     </table>
-    <div class="col-md-12 col-lg-12 col-sm-12" width="100%" style="margin-right:300px;">
-        <ul class="pagination">
-            <?php
-                    // nút lùi
-                    if($current_page > 1 && $page > 1){
-                        echo '<li style="color: black;
-                        float: left;
-                        padding: 8px 16px;
-                        text-decoration: none;
-                        transition: background-color .3s;
-                        border: 1px solid #ddd;" class="active"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page='.($current_page-1).'">Prev</a></li>';
-                    }
-                    for($i=1;$i<=$page;$i++)
-                    {
-                    ?>
-            <li style="color: black;
-                        float: left;
-                        padding: 8px 16px;
-                        text-decoration: none;
-                        transition: background-color .3s;
-                        border: 1px solid #ddd;"><a
-                    href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo $i;?>"><?php echo $i;?></a>
-            </li>
-            <?php
-                        }
-                        // nút next
-                        if($current_page < $page && $page > 1){
-                            echo '<li style="color: black;
-                            float: left;
-                            padding: 8px 16px;
-                            text-decoration: none;
-                            transition: background-color .3s;
-                            border: 1px solid #ddd;" class="active"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page='.($current_page+1).'">Next</a></li>';
-                        }
-                    ?>
-        </ul>
-    </div>
 </div>
 <script>
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */

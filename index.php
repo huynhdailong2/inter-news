@@ -34,12 +34,28 @@ include "./Config/Connect.php";
 </head>
 <style>
     body {
-        background-image: url('./Content/img/body-bg.jpg');
-        overflow-x:clip;    
+        background-image: url('./Assets/front/images/body-bg.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+       
     }
     .margin{
         margin-left: 90px;
         margin-right: 90px;
+    }
+    .container{
+    background: #ffffff;
+    display: flex;
+    padding-top: 10px;
+    padding-right: 0px;
+    padding-bottom: 10px;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+    padding-left: 15px;
     }
 </style>
 

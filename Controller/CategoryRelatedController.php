@@ -55,5 +55,8 @@
                 include "../../View/back/CategoryRelate/CategoryRelated.php";
             }
             break;
+        case 'search':
+            include "../../View/back/CategoryRelate/CategoryRalated_Search.php";
+            break;
     }
 ?>

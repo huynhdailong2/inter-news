@@ -162,6 +162,20 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //SHOW danh mục công ty luật tại việt nam (trong mục giới thiệu)
+        public function showCateRelate_CTTVN(){
+            $db=new Connect();
+            $sql="select * from category_related where note='congtytaivietnam'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục phân trang công ty luật tại việt nam (trong mục giới thiệu)
+        public function CTTVN_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='congtytaivietnam' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";
@@ -196,5 +210,11 @@
             $result=$db->exec($sql);
             return $result;
         }
-    }
+        public function getsearch($timkiem){
+            $db=new Connect();
+            $sql="select * from category_related where note like '$timkiem' or name like '%$timkiem%'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+    }   
 ?>
