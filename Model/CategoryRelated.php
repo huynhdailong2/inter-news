@@ -176,6 +176,20 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show danh mục tư vấn sở hữu trí tuệ ( trong mục sở hữu trí tuệ)
+        public function showCateRelate_TVSHTT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvansohuutritue'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục bài viết liên quan đăng ký sáng chế ( trong mục sở hữu trí tuệ)
+        public function showCateRelate_DKSC(){
+            $db=new Connect();
+            $sql="select * from category_related where note='dangkysangche'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";

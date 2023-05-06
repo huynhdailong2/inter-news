@@ -36,32 +36,32 @@ div.title {
         <tr>
             <td>Name</td>
             <td><input type="text" class="form-control" name="name"
-                    value="<?php if(isset($name)) echo $name;?>" maxlength="100px"></td>
+                    value="<?php if(isset($name)) echo $name;?>" maxlength="1000px"></td>
         </tr>
         <tr>
             <td>Phone</td>
             <td><input type="text" class="form-control" name="phone"
-                    value="<?php if(isset($phone)) echo $phone;?>" maxlength="100px"></td>
+                    value="<?php if(isset($phone)) echo $phone;?>" maxlength="1000px"></td>
         </tr>
         <tr>
             <td>Email</td>
             <td><input type="text" class="form-control" name="email"
-                    value="<?php if(isset($email)) echo $email;?>" maxlength="100px"></td>
+                    value="<?php if(isset($email)) echo $email;?>" maxlength="1000px"></td>
         </tr>
         <tr>
             <td>Description</td>
             <td><input type="text" class="form-control" name="description" value="<?php if(isset($description)) echo $description;?>"
-                    maxlength="100px"></td>
+                    maxlength="1000px"></td>
         </tr>
         <tr>
             <td>URL</td>
             <td><input type="text" class="form-control" name="url" value="<?php if(isset($url)) echo $url;?>"
-                    maxlength="100px"></td>
+                    maxlength="1000px"></td>
         </tr>
         <tr>
             <td>Note</td>
             <td><input type="text" class="form-control" name="note" value="<?php if(isset($note)) echo $note;?>"
-                    maxlength="100px"></td>
+                    maxlength="1000px"></td>
         </tr>
         <tr>
             <td>Hình</td>

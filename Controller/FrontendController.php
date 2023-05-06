@@ -54,7 +54,9 @@
         case 'doanhnghiep_thutucchuyendoiloaihinhdoanhnghiep':
             include "./View/front/danhmuc_doanhnghiep/thutucchuyendoiloaihinhdoanhnghiep.php";
             break;
-        
-        
+        //danh mục trang con (sở hữu trí tuệ)
+        case 'sohuutritue_dangkisangche':
+            include "./View/front/danhmuc_sohuutritue/dangkisangche.php";
+            break;
     }
 ?>

@@ -52,6 +52,13 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show danh mục tuyển dụng
+        public function showCategoryTuyendung(){
+            $db=new Connect();
+            $sql="select * from category where note='tuyendung'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         //lấy id của danh mục
         public function CategoryId($id){
             $db=new Connect();

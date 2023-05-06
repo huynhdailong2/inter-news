@@ -504,17 +504,37 @@ img{
     background: linear-gradient(90deg, #f58634, rgba(255, 255, 255, 0));
     margin-top: 5px;
 }
-.d-related-left{
+.d-related{
     display:flex;
     border-bottom: 1px dashed #dcdcdc;
     padding-bottom: 10px;
     margin-bottom: 10px;
     align-items: center;
 }
-.a-related-left{
+.a-related{
     width: 200px;
     margin-right: 15px;
 }
-.a-related-left .img-related-left{
+.a-related .img-related{
     display:block;
+}
+.d-related .col-related{
+    flex:1;
+}
+.d-related .col-related .div-right-title{
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 600;
+}
+.d-related .col-related .div-right-desc{
+    margin-top: 5px;
+}
+.d-related .col-related .more{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.d-related .col-related .more a{
+    color: #268c52;
+    line-height: 13px;
 }
