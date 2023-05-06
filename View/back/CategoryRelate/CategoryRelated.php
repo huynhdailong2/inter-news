@@ -179,7 +179,7 @@ i {
             </div>
         </tbody>
     </table>
-    <div class="col-md-12 col-lg-12 col-sm-12 col-md-offset-3" style="margin-left:450px;">
+    <div class="col-md-12 col-lg-12 col-sm-12" width="100%" style="margin-right:300px;">
         <ul class="pagination">
         <?php
                     // nút lùi

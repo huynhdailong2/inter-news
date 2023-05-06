@@ -36,5 +36,16 @@
         case 'doanhnghiep_thanhlapcongtydoanhnghiep':
             include "./View/front/danhmuc_doanhnghiep/thanhlapcongty_doanhnghiep.php";
             break;
+        case 'doanhnghiep_thaydoidangkykinhdoanh':
+            include "./View/front/danhmuc_doanhnghiep/thaydoidangkykinhdoanh.php";
+            break;
+        case 'doanhnghiep_thanhlapchinhanhcongty':
+            include "./View/front/danhmuc_doanhnghiep/thanhlapchinhanhcongty.php";
+            break;
+        case 'doanhnghiep_thutucchuyendoiloaihinhdoanhnghiep':
+            include "./View/front/danhmuc_doanhnghiep/thutucchuyendoiloaihinhdoanhnghiep.php";
+            break;
+        
+        
     }
 ?>

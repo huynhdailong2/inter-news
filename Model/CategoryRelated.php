@@ -85,7 +85,7 @@
             $result=$db->getList($sql);
             return $result;
         }
-        //show danh mục vụ việc kế toán- thuế
+        //show danh mục  kế toán- thuế
         public function showCateRelate_KTT(){
             $db=new Connect();
             $sql="select * from category_related where note='ketoan-thue'";
@@ -99,17 +99,66 @@
             $result=$db->getList($sql);
             return $result;
         }
-        //show danh mục vụ việc kế toán- thuế
+        //show danh mục thành lập công ty doanh nghiệp
         public function showCateRelate_TLCTDN(){
             $db=new Connect();
             $sql="select * from category_related where note='thanhlapcongtydoanhnghiep'";
             $result=$db->getList($sql);
             return $result;
         }
-        // phân trang danh mục kế toán- thuế
+        // phân trang danh mục thành lập công ty doanh nghiệp
         public function TLCTDN_pagination($start,$limit){
             $db=new Connect();
             $sql="select * from category_related where note='thanhlapcongtydoanhnghiep' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục thay đổi đăng ký kinh doanh
+        public function showCateRelate_TDDKKD(){
+            $db=new Connect();
+            $sql="select * from category_related where note='thaydoidangkykinhdoanh'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        // phân trang danh mục thay đổi đăng ký kinh doanh
+        public function TDDKKD_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='thaydoidangkykinhdoanh' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục bài viết liên quan thành lập chi nhánh công ty 
+        public function showCateRelate_TLCNCT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='thanhlapchinhanhcongty'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục thành lập công ty (trong thành lập chi nhánh công ty)
+        public function showCateRelate_TLCT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='thanhlapcongty'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục văn bản pháp luật (trong thành lập chi nhánh công ty)
+        public function showCateRelate_VBPL(){
+            $db=new Connect();
+            $sql="select * from category_related where note='vanbanphapluat'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục tư vấn pháp luật (trong thành lập chi nhánh công ty)
+        public function showCateRelate_TVPL(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvanphapluat'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục thủ tục chuyển đổi loại hình doanh nghiệp
+        public function showCateRelate_TTCĐLHDN(){
+            $db=new Connect();
+            $sql="select * from category_related where note='thu-tuc-chuyen-doi-loai-hinh-doanh-nghiep'";
             $result=$db->getList($sql);
             return $result;
         }
