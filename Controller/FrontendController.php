@@ -73,5 +73,8 @@
         case 'sohuutritue_kieudangcongnghiep':
             include "./View/front/danhmuc_sohuutritue/kieudangcongnghiep.php";
             break;
+        case 'sohuutritue_baohoquyentacgia':
+            include "./View/front/danhmuc_sohuutritue/baohoquyentacgia.php";
+            break;
     }
 ?>

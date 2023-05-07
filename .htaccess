@@ -26,6 +26,7 @@ RewriteRule ^tu-van-dang-ky-nhan-hieu$ index.php?action=FrontendController&act=s
 RewriteRule ^qua-trinh-dang-ky-nhan-hieu$ index.php?action=FrontendController&act=sohuutritue_trinhtudangkynhanhieu
 RewriteRule ^thu-tuc-dang-ky-chi-dan-dia-ly$ index.php?action=FrontendController&act=sohuutritue_dangkychidandialy
 RewriteRule ^kieu-dang-cong-nghiep$ index.php?action=FrontendController&act=sohuutritue_kieudangcongnghiep
+RewriteRule ^quyen-tac-gia-quyen-lien-quan$ index.php?action=FrontendController&act=sohuutritue_baohoquyentacgia
 
 
 
