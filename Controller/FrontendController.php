@@ -86,5 +86,9 @@
         case 'giayphep_giayphepkinhdoanhluhanhnoidia':
             include "./View/front/danhmuc_giayphep/giayphepkinhdoanhluhanhnoidia.php";
             break;
+        //danh mục con (kế toán thuế)
+        case 'ketoanthue_tuvanketoanthue':
+            include "./View/front/danhmuc_ketoanthue/tuvanketoanthue.php";
+            break;
     }
 ?>

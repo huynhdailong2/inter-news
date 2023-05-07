@@ -267,6 +267,20 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show bài viết liên quan tư vấn kế toán thuế ( kế toán- thuế)
+        public function showCateRelate_TVKTT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvanketoanthue'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show mục dịch vụ kế toán ( kế toán- thuế)
+        public function showCateRelate_DVKT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='dichvuketoan'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";
