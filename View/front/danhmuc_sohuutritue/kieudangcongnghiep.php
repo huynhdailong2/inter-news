@@ -224,6 +224,102 @@ ul,p,h4,h3 {
             <h4 class="div-left-h4" id="Bước_4:_Thẩm_định_hình_thức_đơn_đăng_ký_kiểu_dáng_công_nghiệp">
                 <em>Bước 4: Thẩm định hình thức đơn đăng ký kiểu dáng công nghiệp</em>
             </h4>
+            <ul class="div-left-ul">
+                <li>Thời hạn thẩm định hình thức:&nbsp;01 tháng kể từ ngày nộp đơn.</li>
+                <li>Cục Sở hữu trí tuệ sẽ xem xét đơn có đủ điều kiện về hình thức, ảnh, chủ sở hữu đơn, quyền nộp đơn, phân loại,…</li>
+                <li>Nếu đơn đăng ký của doanh nghiệp đáp ứng điều kiện, Cục Sở hữu trí tuệ sẽ Thông báo chấp nhận đơn hợp lệ và cho đăng công bố đơn.</li>
+                <li>Nếu đơn đăng ký kiểu dáng công nghiệp của doanh nghiệp không đáp ứng điều kiện, Cục Sở hữu trí tuệ sẽ ra Thông báo không chấp nhận đơn và đề nghị doanh nghiệp sửa đổi. Doanh nghiệp tiến hành sửa đổi theo yêu cầu và nộp công văn sửa đổi cho Cục Sở hữu trí tuệ.</li>
+            </ul>
+            <h4 class="div-left-h4" id="Bước_5:_Công_bố_đơn_đăng_ký_kiểu_dáng_công_nghiệp">
+                <em>Bước 5: Công bố đơn đăng ký kiểu dáng công nghiệp</em>
+            </h4>
+            <ul class="div-left-ul">
+                <li>Thời hạn công bố đơn đăng ký kiểu dáng công nghiệp:02 tháng kể từ ngày có Thông báo chấp nhận đơn hợp lệ.</li>
+                <li>Nội dung công bố đơn đăng ký kiểu dáng công nghiệp là các thông tin liên quan đến đơn hợp lệ ghi trong thông báo chấp nhận đơn hợp lệ, ảnh và phân loại kiểu dáng công nghiệp.</li>
+            </ul>
+            <h4 class="div-left-h4" id="Bước_6:_Thẩm_định_nội_dung_đơn_đăng_ký_kiểu_dáng_công_nghiệp">
+                <em>Bước 6: Thẩm định nội dung đơn đăng ký kiểu dáng công nghiệp</em>
+            </h4>
+            <ul class="div-left-ul">
+                <li>Thời hạn thẩm định nội dung: 09 -12 tháng kể từ ngày công bố đơn.</li>
+                <li>Cục Sở hữu trí tuệ xem xét các điều kiện đăng ký kiểu dáng công nghiệp từ đó đánh giá khả năng cấp văn bằng cho kiểu dáng công nghiệp cho chủ đơn đăng ký. Nếu đơn đăng ký kiểu dáng công nghiệp đáp ứng đủ điều kiện thì Cục Sở hữu trí tuệ ra Thông báo dự định cấp văn bằng cho kiểu dáng công nghiệp đã đăng ký.</li>
+                <li>Nếu đơn đăng ký kiểu dáng công nghiệp không đáp ứng đủ điều kiện, Cục Sở hữu trí tuệ ra Thông báo không cấp văn bằng cho kiểu dáng công nghiệp mà doanh nghiệp đăng ký. Trong trường hợp này, chủ đơn có thể xem xét và gửi công văn trả lời, khiếu nại quyết định của Cục Sở hữu trí tuệ, đồng thời đưa ra các căn cứ để cấp văn bằng bảo hộ kiểu dáng công nghiệp cho kiểu dáng công nghiệp của doanh nghiệp.</li>
+            </ul>
+            <h4 class="div-left-h4" id="Bước_7:_Cấp_văn_bằng_bảo_hộ_kiểu_dáng_công_nghiệp">
+                <em>Bước 7: Cấp văn bằng bảo hộ kiểu dáng công nghiệp</em>
+            </h4>
+            <ul class="div-left-ul">
+                <li>Thời hạn cấp văn bằng: 02-03 tháng kể từ ngày nộp lệ phí cấp văn bằng.</li>
+                <li>Sau khi có quyết định cấp văn bằng, chủ đơn hoặc đại diện của chủ đơn Trong nộp lệ phí vấp văn bằng và nhận giấy chứng nhận đăng ký kiểu dáng công nghiệp.</li>
+            </ul>
+            <h3 class="div-left-h3" id="Lệ_phí_nộp_đơn_kiểu_dáng_công_nghiệp">
+                Lệ phí nộp đơn kiểu dáng công nghiệp
+            </h3>
+            <div class="gioithieu-full" style="margin-right:800px; margin-top:10px; margin-bottom:0;"></div>
+            <ul class="div-left-ul">
+                <li>Lệ phí nộp đơn: 150.000VNĐ;</li>
+                <li>Phí phân loại kiểu dáng công nghiệp: 100.000/01 phân loại;</li>
+                <li>Phí thẩm định đơn: 700.000VNĐ/01 đối tượng;</li>
+                <li>Phí công bố đơn: 120.000VNĐ;</li>
+                <li>Phí công bố từ hình thứ 2 trở đi: 60.000VNĐ/01 hình;</li>
+                <li>Phí tra cứu thông tin nhằm phục vụ quá trình thẩm định: 480.000VNĐ/01 đối tượng;</li>
+                <li>Phí thẩm định yêu cầu hưởng quyền ưu tiên (nếu có): 600.000VNĐ/01 đơn ưu tiên.</li>
+                <li>Lệ phí cấp văn bằng bảo hộ: 660.000 VNĐ/01 đối tượng với 06 ảnh.</li>
+                <li>Lệ phí đại diện Sở hữu trí tuệ: theo mức phí quy định của mỗi bên.</li>
+            </ul>
+            <h3 class="div-left-h3" id="Thời_hạn_bảo_hộ_kiểu_dáng_công_nghiệp">
+                Thời hạn bảo hộ kiểu dáng công nghiệp
+            </h3>
+            <div class="gioithieu-full" style="margin-right:800px; margin-top:10px; margin-bottom:0;"></div>
+            <p>
+                Tại Việt Nam kiểu dáng công nghiệp bảo hộ trong vòng 05 năm kể từ ngày nộp đơn. 
+                Và được gia hạn tối đa 02 lần. Theo đó tối đa một kiểu dáng công nghiệp được 
+                bảo hộ sẽ được độc quyền trong vòng 15 năm (nếu gia hạn liên tiếp khi hết hạn).
+                 Sau đó kiểu dáng công nghiệp sẽ hết độc quyền và người khác có quyền sử dụng 
+                 không cần sự đồng ý của chủ sở hữu.
+            </p>
+            <h3 class="div-left-h3" id="Phân_loại_kiểu_dáng_công_nghiệp">Phân loại kiểu dáng công nghiệp</h3>
+            <div class="gioithieu-full" style="margin-right:800px; margin-top:10px; margin-bottom:0;"></div>
+            <p>
+                Trong tờ khai đăng ký kiểu dáng công nghiệp cần thực hiện phân loại 
+                kiểu dáng công nghiệp theo bảng phân loại quốc tế Locarno phiên bản 
+                thứ 13 để phân loại các sản phẩm phục vụ cho việc nộp đơn đăng ký kiểu 
+                dáng công nghiệp. Theo đó, quý khách hàng nên nhờ các đơn vị có chức năng 
+                đại diện sở hữu trí tuệ để hỗ trợ việc nộp đơn, phân loại kiểu dáng công 
+                nghiệp để đơn đăng ký kiểu dáng công nghiệp được chấp nhận về mặt hình thức.
+            </p>
+            <h3 class="div-left-h3" id="Một_số_câu_hỏi_liên_quan">Một số câu hỏi liên quan</h3>
+            <div class="gioithieu-full" style="margin-right:800px; margin-top:10px; margin-bottom:0;"></div>
+            <h4 class="div-left-h4" id="Kiểu_dáng_công_nghiệp_là_gì?">
+                <em>Kiểu dáng công nghiệp là gì?</em>
+            </h4>
+            <p>
+                Kiểu dáng công nghiệp là hình dáng bên ngoài của sản phẩm được 
+                thể hiện bằng hình khối, đường nét, màu sắc hoặc sự kết hợp những yếu tố này.
+            </p>
+            <p>
+                Sản phẩm được hiểu là đồ vật, dụng cụ, thiết bị, phương tiện, 
+                hoặc bộ phận dùng để lắp ráp, hợp thành các sản phẩm đó, được 
+                sản xuất bằng phương pháp công nghiệp hoặc thủ công nghiệp, có 
+                kết cấu và chức năng rõ ràng, được lưu thông độc lập.
+            </p>
+            <h4 class="div-left-h4" id="Kiểu_dáng_công_nghiệp_đã_sử_dụng_có_thể_đăng_ký_bảo_hộ_không?">
+                <em>Kiểu dáng công nghiệp đã sử dụng có thể đăng ký bảo hộ không?</em>
+            </h4>
+            <p>
+                Nếu kiểu dáng công nghiệp của bạn dù có tính mới so với các kiểu dáng 
+                khác trên thế giới nhưng đơn vị của bạn đã sử dụng hoặc công khai hình 
+                ảnh của kiểu dáng sẽ làm mất tính mới so với chính nó nên khi đăng ký 
+                sẽ bị từ chối cấp bằng bảo hộ.
+            </p>
+            <h4 class="div-left-h4" id="Kiểu_dáng_công_nghiệp_được_gia_hạn_tối_đa_bao_lần?">
+                <em>Kiểu dáng công nghiệp được gia hạn tối đa bao lần?</em>
+            </h4>
+            <p>
+                Kiểu dáng công nghiệp được bảo hộ trong 05 năm sau đó được gia hạn 
+                tối đa 02 lần tiếp theo, sau đó kiểu dáng thuộc về công chúng không 
+                bảo hộ độc quyền cho chủ đơn nữa.
+            </p>
         </div>
     </div>
 </section>
