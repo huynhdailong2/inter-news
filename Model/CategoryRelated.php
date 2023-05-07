@@ -253,6 +253,48 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show bài viết liên quan giay phep kinh doanh lu hanh nội địa (giấy phép)  
+        public function showCateRelate_GPKDLHND(){
+            $db=new Connect();
+            $sql="select * from category_related where note='luhanhnoidia'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show bài viết liên quan giay phep kinh doanh lu hanh (giấy phép)  
+        public function showCateRelate_GPKDLH(){
+            $db=new Connect();
+            $sql="select * from category_related where note='giayphepkinhdoanhluhanh'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show bài viết liên quan tư vấn kế toán thuế ( kế toán- thuế)
+        public function showCateRelate_TVKTT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvanketoanthue'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show mục dịch vụ kế toán ( kế toán- thuế)
+        public function showCateRelate_DVKT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='dichvuketoan'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show mục điều chỉnh giấy chứng nhận (đầu tư)
+        public function showCateRelate_DCGCN(){
+            $db=new Connect();
+            $sql="select * from category_related where note='dieuchinhgiaychungnhan'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show mục tư vấn đầu tư (đầu tư)
+        public function showCateRelate_TVDT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvandautu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";
@@ -289,7 +331,7 @@
         }
         public function getsearch($timkiem){
             $db=new Connect();
-            $sql="select * from category_related where note like '$timkiem' or name like '%$timkiem%'";
+            $sql="select * from category_related where note like '%$timkiem%' or name like '%$timkiem%'";
             $result=$db->getList($sql);
             return $result;
         }

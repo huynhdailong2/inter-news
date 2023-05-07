@@ -103,7 +103,7 @@ button{
 .home-div3-css{
     position: absolute;
     display: flex;
-    max-width: 320px;
+    max-width: 500px;
     flex-flow: wrap;
     justify-content: flex-end;
     width: auto;
@@ -118,6 +118,7 @@ button{
 }
 .home-div3-css>.type{
     width: 100%;
+    max-width:500;
     color: #ffffff;
     font-size: 30px;
     line-height: 30px;

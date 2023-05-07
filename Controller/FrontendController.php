@@ -83,5 +83,16 @@
         case 'giayphep_giayphepkinhdoanhluhanhquocte':
             include "./View/front/danhmuc_giayphep/giayphepkinhdoanhluhanhquocte.php";
             break;
+        case 'giayphep_giayphepkinhdoanhluhanhnoidia':
+            include "./View/front/danhmuc_giayphep/giayphepkinhdoanhluhanhnoidia.php";
+            break;
+        //danh mục con (kế toán thuế)
+        case 'ketoanthue_tuvanketoanthue':
+            include "./View/front/danhmuc_ketoanthue/tuvanketoanthue.php";
+            break;
+        // danh mục con ( đầu tư)
+        case 'dautu_dieuchinhgiaychungnhan':
+            include "./View/front/danhmuc_dautu/dieuchinhgiaychungnhan.php";
+            break;
     }
 ?>
