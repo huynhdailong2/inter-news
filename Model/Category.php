@@ -59,6 +59,20 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show danh mục giấy phép lao động (giấy phép)
+        public function showCategoryGPLĐ(){
+            $db=new Connect();
+            $sql="select * from category where note='giaypheplaodong'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show danh mục phân trang giấy phép lao động (giấy phép)
+        public function GPLĐ_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category where note='giaypheplaodong' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
         //lấy id của danh mục
         public function CategoryId($id){
             $db=new Connect();

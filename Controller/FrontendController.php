@@ -76,5 +76,12 @@
         case 'sohuutritue_baohoquyentacgia':
             include "./View/front/danhmuc_sohuutritue/baohoquyentacgia.php";
             break;
+        //danh mục con ( giấy phép)
+        case 'giayphep_giaypheplaodong':
+            include "./View/front/danhmuc_giayphep/giaypheplaodong.php";
+            break;
+        case 'giayphep_giayphepkinhdoanhluhanhquocte':
+            include "./View/front/danhmuc_giayphep/giayphepkinhdoanhluhanhquocte.php";
+            break;
     }
 ?>

@@ -32,6 +32,13 @@ RewriteRule ^quyen-tac-gia-quyen-lien-quan$ index.php?action=FrontendController&
 
 
 
+RewriteRule ^tu-van-giay-phep-lao-dong$ index.php?action=FrontendController&act=giayphep_giaypheplaodong
+RewriteRule ^giay-phep-kinh-doanh-lu-hanh-quoc-te$ index.php?action=FrontendController&act=giayphep_giayphepkinhdoanhluhanhquocte
+
+
+
+
+
 RewriteRule ^tu-van-doanh-nghiep-page([0-9]+)$ index.php?action=FrontendController&act=doanhnghiep&page=$1
 RewriteRule ^so-huu-tri-tue-page([0-9]+)$ index.php?action=FrontendController&act=sohuutritue&page=$1
 RewriteRule ^tu-van-dau-tu-page([0-9]+)$ index.php?action=FrontendController&act=dautu&page=$1
@@ -42,6 +49,7 @@ RewriteRule ^thay-doi-dang-ky-kinh-doanh-page([0-9]+)$ index.php?action=Frontend
 RewriteRule ^cong-ty-luat-tai-viet-nam-page([0-9]+)$ index.php?action=FrontendController&act=gioithieu_congtyluattaivietnam&page=$1
 RewriteRule ^tu-van-dang-ky-nhan-hieu-page([0-9]+)$ index.php?action=FrontendController&act=sohuutritue_tuvandangkynhanhieu&page=$1
 RewriteRule ^giai-quyet-tranh-chap-page([0-9]+)$ index.php?action=FrontendController&act=vuviecvuan&page=$1
+RewriteRule ^tu-van-giay-phep-lao-dong-page([0-9]+)$ index.php?action=FrontendController&act=giayphep_giaypheplaodong&page=$1
 
 
 RewriteRule ^tu-van-dau-tu$ index.php?action=FrontendController&act=dautu

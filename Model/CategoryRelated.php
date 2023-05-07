@@ -239,6 +239,20 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show bài viết liên quan mục giấy phép lao động (giấy phép) 
+        public function showCateRelate_GPLD(){
+            $db=new Connect();
+            $sql="select * from category_related where note='giaypheplaodong'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show bài viết liên quan giay phep kinh doanh lu hanh quoc te (giấy phép)  
+        public function showCateRelate_GPKDLHQT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='giayphepkinhdoanhluhanhquocte'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";
