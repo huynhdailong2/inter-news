@@ -83,5 +83,8 @@
         case 'giayphep_giayphepkinhdoanhluhanhquocte':
             include "./View/front/danhmuc_giayphep/giayphepkinhdoanhluhanhquocte.php";
             break;
+        case 'giayphep_giayphepkinhdoanhluhanhnoidia':
+            include "./View/front/danhmuc_giayphep/giayphepkinhdoanhluhanhnoidia.php";
+            break;
     }
 ?>

@@ -165,18 +165,22 @@ a.link-center2{
                     <span class="sub">INVESTMENT CONSULTANCY</span>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./Assets/front/images/So-Huu-Tri-Tue.jpg" alt="Chicago" style="width: 100%; height: 450px;">
-                <div class="carousel-caption">
-                    <h3>Chicago</h3>
-                    <p>Thank you, Chicago!</p>
+            <div class="carousel-item active">
+                <img src="./Assets/front/images/So-Huu-Tri-Tue.jpg" alt="Chicago" class="img-slide1"
+                    style="width: 100%; height: 450px; filter: brightness(60%);">
+                <div class="home-div1-elm home-div3-css bz-title fadeInUp animated" data-animation-in="fadeInUp"
+                    data-delay-in="0.3" style="opacity: 1; animation-delay: 0.3s;">
+                    <div style="font-size:25px;" class="type">Tư vấn sở hữu trí tuệ</div>
+                    <span style="font-size:25px;" class="sub">INTELLECTUAL PROPERTY CONSULTANCY</span>
                 </div>
             </div>
-            <div class="carousel-item">
-                <img src="./Assets/front/images/Tu-van-doanh-nghiep.jpg" alt="New York" style="width: 100%; height: 450px;">
-                <div class="carousel-caption">
-                    <h3>New York</h3>
-                    <p>We love the Big Apple!</p>
+            <div class="carousel-item active" >
+                <img src="./Assets/front/images/Tu-van-doanh-nghiep.jpg" alt="Chicago" class="img-slide1"
+                    style="width: 100%; height: 450px; filter: brightness(60%);">
+                <div class="home-div1-elm home-div3-css bz-title fadeInUp animated" data-animation-in="fadeInUp"
+                    data-delay-in="0.3" style="opacity: 1; animation-delay: 0.3s;">
+                    <div style="font-size:25px;" class="type">Tư vấn Kinh doanh & Thương Mại</div>
+                    <span style="font-size:25px;" class="sub">Business & Trade Law Consultacy</span>
                 </div>
             </div>
         </div>
