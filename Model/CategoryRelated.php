@@ -190,6 +190,48 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //SHOW danh mục tư vấn đăng ký nhãn hiệu 
+        public function showCateRelate_TVKDNH(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvandangkynhanhieu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục tư vấn đăng ký nhãn hiệu (trong mục trình tự đăng ký nhãn hiệu)
+        public function showCateRelate_TVKDNH2(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tvdangkynhanhieu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //SHOW danh mục phân trang công ty luật tại việt nam (trong mục giới thiệu)
+        public function TVKDNH_pagination($start,$limit){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvandangkynhanhieu' limit ".$start.",".$limit;
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show bài viết liên quan danh mục trình tự đăng ký nhãn hiệu
+        public function showCateRelate_TTDKNH(){
+            $db=new Connect();
+            $sql="select * from category_related where note='trinhtudangkynhanhieu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show bài viết liên quan danh mục liên hệ
+        public function showCateRelate_LH(){
+            $db=new Connect();
+            $sql="select * from category_related where note='lienhe'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show bài viết công ty luật việt an (danh mục liên hệ)
+        public function showCateRelate_CTLVA(){
+            $db=new Connect();
+            $sql="select * from category_related where note='congtyluatvietan'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";

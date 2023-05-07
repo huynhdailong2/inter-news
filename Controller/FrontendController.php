@@ -41,6 +41,9 @@
         case 'gioithieu_tuyendung':
             include "./View/front/danhmuc_gioithieu/tuyendung.php";
             break;
+        case 'gioithieu_lienhe':
+            include "./View/front/danhmuc_gioithieu/lienhe.php";
+            break;
             //danh muc trang con ( doanh nghiep )
         case 'doanhnghiep_thanhlapcongtydoanhnghiep':
             include "./View/front/danhmuc_doanhnghiep/thanhlapcongty_doanhnghiep.php";
@@ -57,6 +60,12 @@
         //danh mục trang con (sở hữu trí tuệ)
         case 'sohuutritue_dangkisangche':
             include "./View/front/danhmuc_sohuutritue/dangkisangche.php";
+            break;
+        case 'sohuutritue_tuvandangkynhanhieu':
+            include "./View/front/danhmuc_sohuutritue/tuvandangkynhanhieu.php";
+            break;
+        case 'sohuutritue_trinhtudangkynhanhieu':
+            include "./View/front/danhmuc_sohuutritue/trinhtudangkynhanhieu.php";
             break;
     }
 ?>

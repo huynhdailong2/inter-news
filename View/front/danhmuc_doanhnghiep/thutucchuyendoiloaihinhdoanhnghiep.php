@@ -1,7 +1,8 @@
 <style>
 <?php include "./Assets/front/css/style.css";
 
-?>ul {
+?>
+ul {
     margin-top: 0;
 }
 </style>

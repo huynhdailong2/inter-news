@@ -4,7 +4,7 @@
 </style>
 <section>
     <div>
-        <p class="title-first">ĐĂNG KÍ SÁNG CHẾ</p>
+        <p class="title-first">Đăng kí sáng chế</p>
     </div>
     <div class="div-row">
         <div class="div-left">
