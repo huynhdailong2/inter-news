@@ -202,3 +202,29 @@
     </div>
 
 </section>
+<script>
+jQuery(document).ready(function($) {
+    $("#at-item").toc({
+        content: "div.div-left",
+        headings: "h2,h3,h4,h5,h6"
+    });
+    $(".sh-at").click(function() {
+        $("#at-item").toggle("slide");
+    });
+    $(".sh-at").on("click", function() {
+        var second = $(this).data("show");
+        var start = $(this).data("hide");
+        if (second === $(this).text()) {
+            $(this).text(start);
+        } else {
+            $(this).text(second);
+        }
+    });
+});
+jQuery(document).on("click", ".btn-mucluc", function() {
+    jQuery("#section_at").addClass("active");
+});
+jQuery(document).on("click", ".bt-close", function() {
+    jQuery("#section_at").removeClass("active");
+});
+</script>
