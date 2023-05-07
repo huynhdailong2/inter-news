@@ -281,6 +281,20 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show mục điều chỉnh giấy chứng nhận (đầu tư)
+        public function showCateRelate_DCGCN(){
+            $db=new Connect();
+            $sql="select * from category_related where note='dieuchinhgiaychungnhan'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show mục tư vấn đầu tư (đầu tư)
+        public function showCateRelate_TVDT(){
+            $db=new Connect();
+            $sql="select * from category_related where note='tuvandautu'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";
@@ -317,7 +331,7 @@
         }
         public function getsearch($timkiem){
             $db=new Connect();
-            $sql="select * from category_related where note like '$timkiem' or name like '%$timkiem%'";
+            $sql="select * from category_related where note like '%$timkiem%' or name like '%$timkiem%'";
             $result=$db->getList($sql);
             return $result;
         }

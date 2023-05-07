@@ -41,6 +41,10 @@ RewriteRule ^tu-van-ke-toan-thue$ index.php?action=FrontendController&act=ketoan
 
 
 
+RewriteRule ^dieu-chinh-giay-chung-nhan-dau-tu$ index.php?action=FrontendController&act=dautu_dieuchinhgiaychungnhan
+
+
+
 RewriteRule ^tu-van-doanh-nghiep-page([0-9]+)$ index.php?action=FrontendController&act=doanhnghiep&page=$1
 RewriteRule ^so-huu-tri-tue-page([0-9]+)$ index.php?action=FrontendController&act=sohuutritue&page=$1
 RewriteRule ^tu-van-dau-tu-page([0-9]+)$ index.php?action=FrontendController&act=dautu&page=$1

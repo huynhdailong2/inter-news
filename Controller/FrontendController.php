@@ -90,5 +90,9 @@
         case 'ketoanthue_tuvanketoanthue':
             include "./View/front/danhmuc_ketoanthue/tuvanketoanthue.php";
             break;
+        // danh mục con ( đầu tư)
+        case 'dautu_dieuchinhgiaychungnhan':
+            include "./View/front/danhmuc_dautu/dieuchinhgiaychungnhan.php";
+            break;
     }
 ?>
