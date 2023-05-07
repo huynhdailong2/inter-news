@@ -232,6 +232,13 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show bài viết liên quan mục trình tự đăng ký chỉ dẫn địa lý 
+        public function showCateRelate_DKCDDL(){
+            $db=new Connect();
+            $sql="select * from category_related where note='dangkychidandialy'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";

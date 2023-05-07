@@ -24,6 +24,8 @@ RewriteRule ^danh-gia-cua-co-quan-quan-ly$ index.php?action=FrontendController&a
 RewriteRule ^dang-ky-sang-che$ index.php?action=FrontendController&act=sohuutritue_dangkisangche
 RewriteRule ^tu-van-dang-ky-nhan-hieu$ index.php?action=FrontendController&act=sohuutritue_tuvandangkynhanhieu
 RewriteRule ^qua-trinh-dang-ky-nhan-hieu$ index.php?action=FrontendController&act=sohuutritue_trinhtudangkynhanhieu
+RewriteRule ^thu-tuc-dang-ky-chi-dan-dia-ly$ index.php?action=FrontendController&act=sohuutritue_dangkychidandialy
+RewriteRule ^kieu-dang-cong-nghiep$ index.php?action=FrontendController&act=sohuutritue_kieudangcongnghiep
 
 
 
