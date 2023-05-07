@@ -253,6 +253,20 @@
             $result=$db->getList($sql);
             return $result;
         }
+        //show bài viết liên quan giay phep kinh doanh lu hanh nội địa (giấy phép)  
+        public function showCateRelate_GPKDLHND(){
+            $db=new Connect();
+            $sql="select * from category_related where note='luhanhnoidia'";
+            $result=$db->getList($sql);
+            return $result;
+        }
+        //show bài viết liên quan giay phep kinh doanh lu hanh (giấy phép)  
+        public function showCateRelate_GPKDLH(){
+            $db=new Connect();
+            $sql="select * from category_related where note='giayphepkinhdoanhluhanh'";
+            $result=$db->getList($sql);
+            return $result;
+        }
         public function CategoryRelatedId($id){
             $db=new Connect();
             $sql="select * from category_related where id=$id";

@@ -153,6 +153,22 @@
                 <h3 class="type-postrelated">Bài viết liên quan</h3>
                 <span class="sub-related"></span>
             </div>
+            <div>
+                <?php
+                $CategoryRelated=new CategoryRelated();
+                $result=$CategoryRelated->showCateRelate_GPKDLHND();
+                while($set=$result->fetch()):
+                ?>
+                <div class="<?php echo $set['description']?>">
+                    <div class="title-post-related">
+                        <a class="a-post-related" href="<?php echo $set['url']?>"
+                            title="<?php echo $set['name']?>"><?php echo $set['name']?></a>
+                    </div>
+                </div>
+                <?php
+                endwhile;
+                ?>
+            </div>
         </div>
         <div class="btn-mucluc">
             <i class="icon fa-bars"></i>
@@ -185,14 +201,14 @@
                 </div>
                 <div class="title-right">
                     <h3 class="type-title-right">
-                        Tư vấn pháp luật sở hữu trí tuệ
+                        Giấy phép kinh doanh lữ hành
                     </h3>
                     <span class="sub-right"></span>
-                    <a href="#" title="Tư vấn pháp luật sở hữu trí tuệ" class="link">Tư vấn pháp luật sở hữu trí tuệ</a>
+                    <a href="#" title="Giấy phép kinh doanh lữ hành" class="link">Giấy phép kinh doanh lữ hành</a>
                 </div>
                 <?php
                 $CategoryRelated=new CategoryRelated();
-                $result=$CategoryRelated->showCateRelate_TVSHTT();
+                $result=$CategoryRelated->showCateRelate_GPKDLH();
                 while($set=$result->fetch()):
                 ?>
                 <div>
