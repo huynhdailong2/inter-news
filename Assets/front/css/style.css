@@ -180,7 +180,7 @@ div.cate-related{
     font-weight: 600;
 }
 .div-left-h4{
-    font-size: 16px;
+    font-size: 18px;
     line-height: 26px;
     margin: 8px 0;
     font-weight: 600;
@@ -456,7 +456,7 @@ img{
     border-bottom: 1px dashed #dcdcdc;
     padding-top: 8px;
     padding-bottom: 8px;
-    flex-flow: wrap;
+    flex-flow: wrap;        
 }
 .post-related-2{
     display: flex;
@@ -469,7 +469,7 @@ img{
 }
 .post-related .title-post-related .a-post-related{
     color:#000000;
-    font-size:16px;
+    font-size:15px;
 }
 .post-related .title-post-related .a-post-related:hover{
     color:#268c52;
@@ -479,7 +479,7 @@ img{
 }
 .post-related-2 .title-post-related .a-post-related{
     color:#000000;  
-    font-size:16px;
+    font-size:15px;
 }
 .post-related-2 .title-post-related .a-post-related:hover{
     color:#268c52;
@@ -491,7 +491,7 @@ img{
 }
 .title-right .type-title-right{
     color: #00578a;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     font-weight: 600;
     text-transform: uppercase;
@@ -499,7 +499,7 @@ img{
 }
 .title-right .type-title-right-2{
     color: #00578a;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 26px;
     font-weight: 600;
     text-transform: uppercase;

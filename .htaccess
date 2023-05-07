@@ -39,7 +39,8 @@ RewriteRule ^tu-van-phap-luat-thue-page([0-9]+)$ index.php?action=FrontendContro
 RewriteRule ^tu-van-thanh-lap-cong-ty-doanh-nghiep-page([0-9]+)$ index.php?action=FrontendController&act=doanhnghiep_thanhlapcongtydoanhnghiep&page=$1
 RewriteRule ^thay-doi-dang-ky-kinh-doanh-page([0-9]+)$ index.php?action=FrontendController&act=doanhnghiep_thaydoidangkykinhdoanh&page=$1
 RewriteRule ^cong-ty-luat-tai-viet-nam-page([0-9]+)$ index.php?action=FrontendController&act=gioithieu_congtyluattaivietnam&page=$1
-RewriteRule ^tu-van-dang-ky-nhan-hieu-page([0-9]+)$ index.php?action=FrontendController&act=sohuutritue_tuvandangkynhanhieu
+RewriteRule ^tu-van-dang-ky-nhan-hieu-page([0-9]+)$ index.php?action=FrontendController&act=sohuutritue_tuvandangkynhanhieu&page=$1
+RewriteRule ^giai-quyet-tranh-chap-page([0-9]+)$ index.php?action=FrontendController&act=vuviecvuan&page=$1
 
 
 RewriteRule ^tu-van-dau-tu$ index.php?action=FrontendController&act=dautu

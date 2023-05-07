@@ -96,6 +96,42 @@ i {
         font-size: 18px;
     }
 }
+.pagination {
+	list-style-type: none;
+	padding: 10px 0;
+	display: inline-flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+}
+.pagination li {
+	box-sizing: border-box;
+	padding-right: 10px;
+}
+.pagination li a {
+	box-sizing: border-box;
+	background-color: #e2e6e6;
+	padding: 8px;
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #616872;
+	border-radius: 4px;
+}
+.pagination li a:hover {
+	background-color: #d4dada;
+}
+.pagination .next a, .pagination .prev a {
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.pagination .currentpage a {
+	background-color: #518acb;
+	color: #fff;
+}
+.pagination .currentpage a:hover {
+	background-color: #518acb;
+}
+
 </style>
 <?php
     $CategoryRelated=new CategoryRelated();
@@ -103,7 +139,7 @@ i {
     $count=$result->rowCount();
     $limit=20;
     $p=new pagination();
-    $page=$p->findPage($count,$limit);
+     $current_page=$p->findPage($count,$limit);
     $start=$p->findStart($limit);
     $current_page = isset($_GET['page'])?$_GET['page']:1;
 ?>
@@ -169,10 +205,10 @@ i {
                         <td><?php echo $set['note'];?></td>
                         <td><?php echo $set['url'];?></td>
                         <td><a
-                                href="index.php?action=CategoryRelatedController&act=edit&id=<?php echo $set['id'];?>">Edit</a>
+                                href="index.php?action=CategoryRelatedControllerController&act=edit&id=<?php echo $set['id'];?>">Edit</a>
                         </td>
                         <td><a
-                                href="index.php?action=CategoryRelatedController&act=delete&id=<?php echo $set['id'];?>">Delete</a>
+                                href="index.php?action=CategoryRelatedControllerController&act=delete&id=<?php echo $set['id'];?>">Delete</a>
                         </td>
                     </tr>
                     <?php
@@ -182,43 +218,37 @@ i {
             </div>
         </tbody>
     </table>
-    <div class="col-md-12 col-lg-12 col-sm-12" width="100%" style="margin-right:300px;">
-        <ul class="pagination">
-            <?php
-                    // nút lùi
-                    if($current_page > 1 && $page > 1){
-                        echo '<li style="color: black;
-                        float: left;
-                        padding: 8px 16px;
-                        text-decoration: none;
-                        transition: background-color .3s;
-                        border: 1px solid #ddd;" class="active"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page='.($current_page-1).'">Prev</a></li>';
-                    }
-                    for($i=1;$i<=$page;$i++)
-                    {
-                    ?>
-            <li style="color: black;
-                        float: left;
-                        padding: 8px 16px;
-                        text-decoration: none;
-                        transition: background-color .3s;
-                        border: 1px solid #ddd;"><a
-                    href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo $i;?>"><?php echo $i;?></a>
-            </li>
-            <?php
-                        }
-                        // nút next
-                        if($current_page < $page && $page > 1){
-                            echo '<li style="color: black;
-                            float: left;
-                            padding: 8px 16px;
-                            text-decoration: none;
-                            transition: background-color .3s;
-                            border: 1px solid #ddd;" class="active"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page='.($current_page+1).'">Next</a></li>';
-                        }
-                    ?>
+</div>
+<div class="col-md-12 col-lg-12 col-sm-12" width="100%" style="margin-right:300px;">
+    <?php if (ceil($count / $limit) > 0): ?>
+        <ul class="pagination" style="margin-left:400px;">
+                <?php if ($current_page > 1): ?>
+            <li class="prev"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo  $current_page-1 ?>">Prev</a></li>
+            <?php endif; ?>
+
+            <?php if ($current_page > 3): ?>
+            <li class="start"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=1">1</a></li>
+            <li class="dots">...</li>
+            <?php endif; ?>
+
+            <?php if ($current_page-2 > 0): ?><li class="page"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo  $current_page-2 ?>"><?php echo  $current_page-2 ?></a></li><?php endif; ?>
+            <?php if ($current_page-1 > 0): ?><li class="page"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo  $current_page-1 ?>"><?php echo  $current_page-1 ?></a></li><?php endif; ?>
+
+            <li class="currentpage"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo  $current_page ?>"><?php echo  $current_page ?></a></li>
+
+            <?php if ($current_page+1 < ceil($count / $limit)+1): ?><li class="page"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo  $current_page+1 ?>"><?php echo  $current_page+1 ?></a></li><?php endif; ?>
+            <?php if ($current_page+2 < ceil($count / $limit)+1): ?><li class="page"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo  $current_page+2 ?>"><?php echo  $current_page+2 ?></a></li><?php endif; ?>
+
+            <?php if ($current_page < ceil($count / $limit)-2): ?>
+            <li class="dots">...</li>
+            <li class="end"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo ceil($count / $limit) ?>"><?php echo ceil($count / $limit) ?></a></li>
+            <?php endif; ?>
+
+            <?php if ($current_page < ceil($count / $limit)): ?>
+            <li class="next"><a href="index.php?action=CategoryRelatedController&act=CategoryRelated&page=<?php echo $current_page+1 ?>">Next</a></li>
+            <?php endif; ?>
         </ul>
-    </div>
+    <?php endif; ?>
 </div>
 <script>
 /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
