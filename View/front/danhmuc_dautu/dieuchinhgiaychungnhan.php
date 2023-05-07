@@ -414,7 +414,7 @@
                         </div>
                         <div class="div-right-title">Mục lục</div>
                         <div class="sh-at" data-show="Hiện" data-hide="Ẩn">Ẩn</div>
-                        <ol id="lva_toc_item" type="I">
+                        <ol id="at-item" type="I">
                             <li><a href="#Các_trường_hợp_phải_điều_chỉnh_Giấy_chứng_nhận_đăng_ký_đầu_tư">Các
                                     trường hợp phải điều chỉnh Giấy
                                     chứng nhận đăng ký đầu tư</a></li>
@@ -478,7 +478,7 @@
                             <li><a href="#Một_số_câu_hỏi_liên_quan_đến_thủ_tục_điều_chỉnh_Giấy_chứng_nhận_đầu_tư">Một
                                     số câu hỏi liên quan đến thủ tục
                                     điều chỉnh Giấy chứng nhận đầu tư</a>
-                                <ol>
+                                <ol class=">
                                     <li><a href="#Điều_chỉnh_Giấy_chứng_nhận_đầu_tư_có_bắt_buộc_không?">Điều
                                             chỉnh Giấy chứng nhận đầu tư
                                             có bắt buộc không?</a></li>
@@ -603,8 +603,7 @@
                             </div>
                         </div>
 
-                        <div class="kc-elm kc-css-399555 lva_title">
-
+                        <div class="">
                             <h3 class="type">Tư vấn pháp luật</h3>
                             <span class="sub"></span>
                             <a href="https://luatvietan.vn/tu-van-phap-luat" class="link " title="Tư vấn pháp luật">Tư
@@ -648,3 +647,29 @@
         </div>
     </div>
 </section>
+<script>
+    jQuery(document).ready(function($) {
+        $("#at-item").toc({
+            content: "div.div-left",
+            headings: "h2,h3,h4,h5,h6"
+        });
+        $(".sh-at").click(function() {
+            $("#at-item").toggle("slide");
+        });
+        $(".sh-at").on("click", function() {
+            var second = $(this).data("show");
+            var start = $(this).data("hide");
+            if (second === $(this).text()) {
+                $(this).text(start);
+            } else {
+                $(this).text(second);
+            }
+        });
+    });
+    jQuery(document).on("click", ".btn-mucluc", function() {
+        jQuery("#section_at").addClass("active");
+    });
+    jQuery(document).on("click", ".bt-close", function() {
+        jQuery("#section_at").removeClass("active");
+    });
+</script>
